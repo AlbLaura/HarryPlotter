@@ -4,11 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FiltroComponent } from './components/filtro/filtro.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import { ProductComponent } from './components/product/product.component';
+import { LatestProductComponent } from './components/latest-product/latest-product.component';
+import { ListProductComponent } from './components/list-product/list-product.component';
+import { QuestionComponent } from './components/question/question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarComponent,
+    FooterComponent,
+    FiltroComponent,
+    PaginationComponent,
+    ProductComponent,
+    LatestProductComponent,
+    ListProductComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
