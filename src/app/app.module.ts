@@ -17,6 +17,7 @@ import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { LatestAnnouncementComponent } from './components/latest-announcement/latest-announcement.component';
 import { AnnouncementComponent } from './components/announcement/announcement.component';
 import { NewsComponent } from './news/news.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NewsComponent } from './news/news.component';
     CarrouselComponent,
     LatestAnnouncementComponent,
     AnnouncementComponent,
-    NewsComponent
+    NewsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
