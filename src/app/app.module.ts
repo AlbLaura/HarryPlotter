@@ -19,6 +19,7 @@ import { AnnouncementComponent } from './components/announcement/announcement.co
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { LoginComponent } from './login/login.component';
     AnnouncementComponent,
     NewsComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    CategoriasComponent
   ],
   imports: [
     BrowserModule,
