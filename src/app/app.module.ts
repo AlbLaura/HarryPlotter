@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { LatestAnnouncementComponent } from './components/latest-announcement/latest-announcement.component';
 import { AnnouncementComponent } from './components/announcement/announcement.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AnnouncementComponent } from './components/announcement/announcement.co
     HomeComponent,
     CarrouselComponent,
     LatestAnnouncementComponent,
-    AnnouncementComponent
+    AnnouncementComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
