@@ -18,6 +18,7 @@ import { LatestAnnouncementComponent } from './components/latest-announcement/la
 import { AnnouncementComponent } from './components/announcement/announcement.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ContactComponent } from './contact/contact.component';
     LatestAnnouncementComponent,
     AnnouncementComponent,
     NewsComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
