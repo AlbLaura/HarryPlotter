@@ -20,6 +20,8 @@ import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { CartComponent } from './cart/cart.component';
+import { FormCartComponent } from './form-cart/form-cart.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { CategoriasComponent } from './categorias/categorias.component';
     NewsComponent,
     ContactComponent,
     LoginComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    CartComponent,
+    FormCartComponent
   ],
   imports: [
     BrowserModule,

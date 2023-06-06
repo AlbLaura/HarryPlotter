@@ -1,0 +1,66 @@
+<div class="container">
+    <form action="#"> <!-- formulario de facturacion -->
+        <div class="row">
+            <div class="col">
+                <h1>Datos para la facturación</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="nombre">Nombre</label><br>
+                <input type="text">
+            </div>
+            <div class="col-6">
+                <label for="apellido">Apellido</label><br>
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label for="provincia">Provincia</label><br>
+                <input type="text">
+            </div>
+            <div class="col-6">
+                <label for="codigo-postal">Código Postal</label><br>
+                <input type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="email">Email</label><br>
+                <input type="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="telefono">Teléfono</label><br>
+                <input type="number">
+            </div>
+        </div>
+        <div class="listado-de-productos">
+            <app-list-product></app-list-product> <!-- quitarle la disminucion/aumento de la cantidad de producto-->
+            <hr>
+            <div class="row">
+                <div class="col-10">
+                    <h4>Total</h4>
+                </div>
+                <div class="col-2">
+                    <h5>$$$$</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <h4>Forma de pago</h4>
+                </div>
+                <div class="col-5">
+                    <p>Pagas en efectivo en el momento de entrega del producto</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6"><button class="btn btn-outline-info">Descargar PDF de la compra</button></div>
+            <div class="col-6"><button class="btn btn-danger" type="submit">Confirmar compra</button></div>
+        </div>
+    </form>
+
+</div>
