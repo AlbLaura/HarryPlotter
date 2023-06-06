@@ -1,0 +1,19 @@
+/* #logo img {
+    height: 100px;
+} */
+#logo h1{
+    font-family: 'Berkshire Swash', cursive;
+    color: #000;
+}
+.form-inline {
+    gap: 20px;
+}
+.nav-link {
+    color: #000;
+}
+ul {
+    gap: 50px;
+}
+.nav-link:hover {
+    color: #DD2200;
+}

@@ -1,3 +1,14 @@
-#logo {
-    font-family: 'Berkshire Swash', cursive;
+/*
+    #DD2200 - "Sinopia" - Principal
+    #FF7D66 - "Salmon" - Principal(mas claro)
+    #F5F5F5 - BG
+    #5CE1E6 - Otros
+*/
+input {
+    border-color: #DD2200 !important;
 }
+::placeholder {
+    color: #FF7D66 !important;
+    font-style: italic;
+}
+
