@@ -4,6 +4,12 @@
     #F5F5F5 - BG
     #5CE1E6 - Otros
 */
+.btn-danger {
+    background-color: #DD2200 !important;
+}
+.btn-danger:hover {
+    background-color: #C50202 !important;
+}
 input {
     border-color: #DD2200 !important;
 }
@@ -11,4 +17,6 @@ input {
     color: #FF7D66 !important;
     font-style: italic;
 }
-
+i {
+    background: none;
+}

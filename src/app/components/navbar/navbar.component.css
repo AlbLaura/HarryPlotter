@@ -1,7 +1,15 @@
-* {
+nav {
+    height: 60px;
     background-color: #DD2200;
     color: white;
 }
-ul {
-    gap: 250px;
+.nav-link {
+    font-weight: bold;
+    color: white;
+    width: 200px;
+}
+.nav-link:hover {
+    background-color:#C50202;
+    border: 0.5px solid #ff4646;
+    box-shadow: inset 0px 0px 18px 7px rgba(0,0,0,0.1);
 }

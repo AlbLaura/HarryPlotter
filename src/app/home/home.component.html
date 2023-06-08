@@ -1,28 +1,35 @@
 <!-- <app-carrousel></app-carrousel> --> <!-- falta agregar imagenes de banners, pero es funcional-->
 <div class="container-fluid">
     <div class="row">
-        <h2>Productos destacados</h2>
+        <div class="col-12">
+            <h2 class="titulo">Productos destacados</h2>
+        </div>
     </div>
     <div class="row">
         <div class="col-2">
             <app-filtro></app-filtro>
         </div>
-        <div class="col-9">
-            <div class="row"> <!-- aplica un for -->
-                <div class="col-2"><app-latest-product></app-latest-product></div>
-                <div class="col-2"><app-latest-product></app-latest-product></div>
-                <div class="col-2"><app-latest-product></app-latest-product></div>
-                <div class="col-2"><app-latest-product></app-latest-product></div>
-                <div class="col-2"><app-latest-product></app-latest-product></div>
-                <div class="col-2"><app-latest-product></app-latest-product></div>
-                <div class="col-2"><app-latest-product></app-latest-product></div>
+        <div class="col-10">
+            <div class="row recuadro"> <!-- aplica un for -->
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-3"><app-latest-product></app-latest-product></div>
+                <div class="col-12 d-flex justify-content-center">
+                    <app-pagination></app-pagination>
+                </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <h2>Anuncios destacados</h2>
+        <div class="col-12">
+            <h2 class="titulo">Anuncios destacados</h2>
+        </div>
     </div>
-    <div class="row">
+    <div class="row recuadro">
         <div class="col-3">
             <app-latest-announcement></app-latest-announcement>
         </div>

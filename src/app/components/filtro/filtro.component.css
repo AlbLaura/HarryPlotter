@@ -1,0 +1,11 @@
+.card {
+    padding: 20px;
+    border: 1px solid #DD2200;
+}
+.form-control {
+    width: 155px;
+}
+.form-control-range {
+    width: 180px;
+    margin: 0px 10px 0px 10px;
+}
