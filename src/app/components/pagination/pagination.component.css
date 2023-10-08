@@ -1,0 +1,7 @@
+.page-link {
+    color: var(--colorPrincipal);
+}
+.active > .page-link{
+    border: var(--colorPrincipal);
+    background-color: var(--colorPrincipal);
+}

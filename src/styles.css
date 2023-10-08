@@ -1,22 +1,41 @@
-/*
-    #DD2200 - "Sinopia" - Principal
-    #FF7D66 - "Salmon" - Principal(mas claro)
-    #F5F5F5 - BG
-    #5CE1E6 - Otros
-*/
-.btn-danger {
-    background-color: #DD2200 !important;
+:root {
+    --colorPrincipal: #DD2200; /*Sinopia*/
+    --color-hover: #C50202;
+    --color-border: #ff4646;
+    --colorSecundario: #FF7D66; /*Salmon*/
+    --colorBG: #FFFFFF; /*White*/
+    --colorExtra: #5CE1E6; /*Electric blue*/
 }
-.btn-danger:hover {
-    background-color: #C50202 !important;
+/*----------------------------------------------------------------*/
+* {
+    font-family: Poppins, "Helvetica Neue", sans-serif;
 }
-input {
-    border-color: #DD2200 !important;
-}
-::placeholder {
-    color: #FF7D66 !important;
-    font-style: italic;
+body {
+    background-color: #F5F5F5;
 }
 i {
     background: none;
+}
+input {
+    padding: 20px 20px;
+    outline-color: var(--colorPrincipal);
+    font-size: 16px;
+}
+
+::placeholder {
+    color: #FF7D66;
+    font-style: italic;
+}
+
+.btn-danger {
+    background-color: var(--colorPrincipal);
+}
+.btn-danger:hover {
+    background-color: #C50202;
+}
+.recuadro {
+    padding: 20px;
+    border: 1px solid var(--colorPrincipal);
+    border-radius: 10px;
+    background-color: var(--colorBG);
 }

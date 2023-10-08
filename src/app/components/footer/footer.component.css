@@ -1,4 +1,38 @@
-* {
-    background-color: #DD2200;
+section {
+    background-color: var(--colorPrincipal);
     color: white;
+}
+textarea{
+    resize: none;
+}
+
+#logo h1{
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+}
+.nav-link {
+    color: var(--colorBG);
+}
+.nav-link:hover {
+    color: #000;
+}
+.row{
+    margin: 0;
+}
+.btn-light {
+    color: var(--colorPrincipal);
+}
+
+.logo-empresa {
+    height: 200px;
+}
+.frase {
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+    font-style: italic;
+}
+.author {
+    background-color: #F5F5F5;
+    font-size: 1rem;
+    padding: 1rem 0rem;
 }

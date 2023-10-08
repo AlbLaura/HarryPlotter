@@ -1,37 +1,25 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="card">
-                <div class="card-header">Ingreso</div>
-                <div class="card-header">Registrarse</div>
-                <div class="card-body">
-                    <form action="#">
-                        <label for="usuario">Usuario</label>
-                        <input type="text" placeholder="alb_laura">
-                        <label for="psw">Contraseña</label>
-                        <input type="password" placeholder="********">
-                        <button type="button" class="btn btn-primary">Volver</button>
-                        <button type="submit" class="btn btn-danger">Iniciar Sesion</button>
-                        <!-- 
-                        <label for="usuario">Usuario</label>
-                        <input type="text" placeholder="alb_laura">
-                        <label for="psw">Contraseña</label>
-                        <input type="password" placeholder="********">
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="alblaura@gmail.com">
-                        <input type="radio"> 
-                        <button type="button" class="btn btn-primary">Volver</button>
-                        <button type="submit" class="btn btn-danger">Iniciar Sesion</button>
-                        -->
-                    </form>
-                        <a href="#">¿Olvidaste tu contraseña?</a>
-                        <a href="#">¿Olvidaste tu usuario?</a>
-                        <a href="#">Inicia Sesion con una Red Social</a>
-                        <!-- Agregar <- ¿Desea recordar su cuenta? -->
+<section class="container">
+    <div class="card">
+        <div class="header-form">
+            <div class="card-header--active col-6">Ingreso</div>
+            <div class="card-header col-6">Registrarse</div>
+        </div>
+        <div class="card-body">
+            <form action="#" data-form>
+                <label for="usuario">Usuario</label>
+                <input type="text" placeholder="alb_laura" data-user>
+                <label for="psw">Contraseña</label>
+                <input type="password" placeholder="********" data-pwd>
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-primary" data-back>Volver</button>
+                    <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
                 </div>
-                
-                
+            </form>
+            <div class="card-info">
+                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="#">¿Olvidaste tu usuario?</a>
+                <a href="#">Inicia Sesion con una Red Social</a>
             </div>
         </div>
     </div>
-</div>
+</section>

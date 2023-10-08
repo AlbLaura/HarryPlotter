@@ -1,12 +1,10 @@
-.recuadro {
-    padding: 20px;
-    border: 1px solid #DD2200;
-    margin-right: 10px;
-    margin-left: 3px;
-    margin-bottom: 1%;
-    border-radius: 10px;
-}
 .titulo {
     padding: 1%;
     text-align: center;
+}
+.anuncios-destacados {
+    margin-bottom: 2rem;
+}
+.banner {
+    padding: 0;
 }

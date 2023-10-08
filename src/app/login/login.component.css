@@ -1,0 +1,52 @@
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    height: 80%;
+    width: 50%;
+}
+.card-body, [data-form], .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.card-info {
+    flex-grow: 1;
+    align-items: center;
+}
+[data-form] {
+    flex-grow: 2;
+}
+input {
+    width: 100%;
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.398);
+    border: none;
+}
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+label {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+.card-header, .card-header--active{
+    display:inline-block;
+    background-color: var(--colorPrincipal);
+    color: var(--colorBG);
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.card-header:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+.card-header--active {
+    background-color: var(--colorBG);
+    border-bottom: none;
+    color: var(--colorPrincipal);
+}

@@ -1,15 +1,24 @@
 nav {
     height: 60px;
-    background-color: #DD2200;
-    color: white;
+    background-color: var(--colorPrincipal);
+    color: var(--colorBG);
 }
 .nav-link {
+    color: var(--colorBG);
+}
+.nav-item, .nav-item--active {
     font-weight: bold;
-    color: white;
     width: 200px;
 }
-.nav-link:hover {
-    background-color:#C50202;
-    border: 0.5px solid #ff4646;
+.nav-item--active {
+    background-color:var(--color-hover);
     box-shadow: inset 0px 0px 18px 7px rgba(0,0,0,0.1);
+}
+.nav-item--active:hover > .nav-link {
+    cursor: default;
+}
+.nav-item:hover {
+    background-color:var(--color-hover);
+    box-shadow: inset 0px 0px 18px 7px rgba(0,0,0,0.1);
+    cursor: pointer;
 }

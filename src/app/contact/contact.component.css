@@ -1,0 +1,34 @@
+label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+i{
+    padding-top: 20px;
+}
+#mensaje{
+    resize: none;
+}
+#formContacto {
+    background-color: var(--colorBG);
+}
+#textoQSomos {
+    background-color: var(--colorBG);
+    font-size: 2rem;
+    border: 1px solid var(--colorPrincipal);
+    border-radius: 10px;
+    padding: 30px;
+}
+.titulo {
+    margin: 20px;
+}
+.background {
+    padding: 0px !important;
+}
+
+.card-header {
+    background-color: var(--colorPrincipal);
+    color: white;
+}
+.card-title {
+    margin: 0px;
+}
