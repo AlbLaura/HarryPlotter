@@ -1,37 +1,47 @@
+.form-control {
+    width: 100%;
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.398);
+    border: none;
+    padding: 1.5rem;
+}
+.form-group label {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
 .container {
-    height: 70vh;
+    height: 80vh;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card {
     height: 80%;
-    width: 50%;
+    width: 60%;
 }
-.card-body, [data-form], .card-info {
+.card-body, [data-form] {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-}
-.card-info {
-    flex-grow: 1;
-    align-items: center;
+    justify-content: space-evenly;
 }
 [data-form] {
     flex-grow: 2;
 }
-input {
-    width: 100%;
-    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.398);
-    border: none;
+.card-info {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 .form-buttons {
     display: flex;
     justify-content: space-between;
+    margin: 1rem 0;
 }
-label {
-    font-size: 1.5rem;
-    margin-bottom: 0;
+.btn {
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
 }
 .card-header, .card-header--active{
     display:inline-block;

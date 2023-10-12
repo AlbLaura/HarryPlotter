@@ -1,15 +1,21 @@
 <section class="container">
     <div class="card">
         <div class="header-form">
+            <!-- --active varia segun el click del usuario -->
             <div class="card-header--active col-6">Ingreso</div>
             <div class="card-header col-6">Registrarse</div>
         </div>
-        <div class="card-body">
+        <!-- card para iniciar sesion -->
+        <!-- <div class="card-body"> 
             <form action="#" data-form>
-                <label for="usuario">Usuario</label>
-                <input type="text" placeholder="alb_laura" data-user>
-                <label for="psw">Contraseña</label>
-                <input type="password" placeholder="********" data-pwd>
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input class="form-control" type="text" placeholder="alb_laura" data-user>
+                </div>
+                <div class="form-group">
+                    <label for="psw">Contraseña</label>
+                    <input class="form-control" type="password" placeholder="********" data-pwd> 
+                </div>
                 <div class="form-buttons">
                     <button type="button" class="btn btn-primary" data-back>Volver</button>
                     <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
@@ -20,6 +26,31 @@
                 <a href="#">¿Olvidaste tu usuario?</a>
                 <a href="#">Inicia Sesion con una Red Social</a>
             </div>
+        </div> -->
+        <!-- card para registrarse -->
+        <div class="card-body"> 
+            <form action="#" data-form>
+                <div class="form-group">
+                    <label for="usuario">Nombre completo</label>
+                    <input class="form-control" type="text" placeholder="Laura Albornoz" data-name>
+                </div>
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input class="form-control" type="text" placeholder="alb_laura" data-user>
+                </div>
+                <div class="form-group">
+                    <label for="psw">Email</label>
+                    <input class="form-control" type="password" placeholder="emailprueba@gmail.com" data-email>
+                </div>
+                <div class="form-group">
+                    <label for="psw">Contraseña</label>
+                    <input class="form-control" type="password" placeholder="********" data-pwd> 
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-primary" data-back>Volver</button>
+                    <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>

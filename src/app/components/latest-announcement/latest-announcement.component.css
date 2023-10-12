@@ -8,3 +8,7 @@
 .img-thumbnail {
     width: 100%;
 }
+.btn a {
+    color: white;
+    text-decoration: none;
+}

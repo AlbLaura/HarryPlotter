@@ -1,0 +1,115 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "titulo": "taza polimero",
+            "color": "green"
+        },
+        {
+            "id": 2,
+            "titulo": "Poster carton sublimado",
+            "color": "red"
+        },
+        {
+            "id": 3,
+            "titulo": "almohada 30x30",
+            "color": "pink"
+        },
+        {
+            "id": 4,
+            "titulo": "calco 7x7",
+            "color": "blue"
+        },
+        {
+            "id": 5,
+            "titulo": "taza vidrio esmerilado",
+            "color": "yellow"
+        }
+    ],
+    "productos": [
+        {
+            "id": 1,
+            "title": "Pikachu",
+            "category": 1,
+            "description": "Producto tal y tal",
+            "image": "url",
+            "price": 1000
+        },
+        {
+            "id": 2,
+            "title": "Pikachu",
+            "category": 2,
+            "description": "Producto tal y tal",
+            "image": "url",
+            "price": 500
+        },
+        {
+            "id": 3,
+            "title": "Pikachu",
+            "category": 3,
+            "description": "Producto tal y tal",
+            "image": "url",
+            "price": 2000
+        },
+        {
+            "id": 4,
+            "title": "Pikachu",
+            "category": 4,
+            "description": "Producto tal y tal",
+            "image": "url",
+            "price": 100
+        },
+        {
+            "id": 5,
+            "title": "Pikachu",
+            "category": 5,
+            "description": "Producto tal y tal",
+            "image": "url",
+            "price": 1700
+        }
+    ],
+    "contacto": [
+        {
+            "id": 1,
+            "nombre": "Adrian Ezequiel Lopez",
+            "rol": "admin",
+            "redes": [
+                {
+                    "titulo": "Instagram",
+                    "usuario": "@harryplotter22"
+                },
+                {
+                    "titulo": "Facebook",
+                    "usuario": "@harryplotter22"
+                },
+                {
+                    "titulo": "Twitter",
+                    "usuario": "@harryplotter22"
+                },
+                {
+                    "titulo": "Whatsapp",
+                    "tel": 2665031680
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Laura Soledad Albornoz",
+            "rol": "programador",
+            "redes": [
+                {
+                    "titulo": "GitHub",
+                    "usuario": "@harryplotter22"
+                },
+                {
+                    "titulo": "Discord",
+                    "usuario": "@harryplotter22"
+                },
+                {
+                    "titulo": "Twitter",
+                    "usuario": "@harryplotter22"
+                }
+            ]
+        }
+    ]
+}

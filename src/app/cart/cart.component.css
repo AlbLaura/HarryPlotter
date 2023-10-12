@@ -1,0 +1,37 @@
+.container {
+    padding: 2rem 0;
+}
+.card {
+    padding: 1rem;
+}
+.titulo {
+    margin-bottom: 2rem;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+.metodo-pago .form-group {
+    flex-direction: column;
+    margin: 0;
+}
+[btn-cash], [btn-cash] {
+    font-size: 3rem;
+}
+[btn-pdf], [btn-shop] {
+    font-size: 1.2rem;
+}
+.fa-credit-card {
+    color: blue;
+}
+.fa-money-bill {
+    color: green;
+}
+hr {
+    border: 1px solid red;
+    border-radius: 5px;
+}
