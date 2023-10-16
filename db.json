@@ -37,7 +37,7 @@
         },
         {
             "id": 2,
-            "title": "Pikachu",
+            "title": "Mario",
             "category": 2,
             "description": "Producto tal y tal",
             "image": "url",
@@ -45,7 +45,7 @@
         },
         {
             "id": 3,
-            "title": "Pikachu",
+            "title": "Link",
             "category": 3,
             "description": "Producto tal y tal",
             "image": "url",
@@ -53,7 +53,7 @@
         },
         {
             "id": 4,
-            "title": "Pikachu",
+            "title": "Skye",
             "category": 4,
             "description": "Producto tal y tal",
             "image": "url",
@@ -61,7 +61,7 @@
         },
         {
             "id": 5,
-            "title": "Pikachu",
+            "title": "Yoru",
             "category": 5,
             "description": "Producto tal y tal",
             "image": "url",
@@ -99,7 +99,7 @@
             "redes": [
                 {
                     "titulo": "GitHub",
-                    "usuario": "@harryplotter22"
+                    "usuario": "AlbLaura"
                 },
                 {
                     "titulo": "Discord",

@@ -1,0 +1,9 @@
+.container-fluid {
+    padding: 1.2rem 0;
+}
+.fa-bars {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    font-size: 2rem;
+}

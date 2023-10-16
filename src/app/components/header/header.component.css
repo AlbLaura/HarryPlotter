@@ -1,11 +1,16 @@
 /* #logo img {
     height: 100px;
 } */
+
 nav {
     background-color: var(--colorBG);
 }
 ul {
     gap: 50px;
+}
+input:focus {
+    box-shadow: 0px 0px 3px 3px var(--colorSecundario);
+    border: 1px solid var(--colorPrincipal);
 }
 
 #logo h1{

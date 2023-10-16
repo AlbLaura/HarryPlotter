@@ -22,6 +22,8 @@ import { LoginComponent } from './login/login.component';
 import { CategoriasComponent } from './categorias/categorias.component';
 import { CartComponent } from './cart/cart.component';
 import { FormCartComponent } from './form-cart/form-cart.component';
+import { ProductoPageComponent } from './producto-page/producto-page.component';
+import { NewPageComponent } from './new-page/new-page.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { FormCartComponent } from './form-cart/form-cart.component';
     LoginComponent,
     CategoriasComponent,
     CartComponent,
-    FormCartComponent
+    FormCartComponent,
+    ProductoPageComponent,
+    NewPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.precio {
+    font-weight: 700;
+    align-self: center;
+    font-size: 1.3rem;
+}
+.card-header {
+    padding: 0;
+}
+.imagen{
+    width: 200;
+    height: 250px;
+    object-fit: cover;
+}
+a { 
+    color: white;
+    text-decoration: none;
+}

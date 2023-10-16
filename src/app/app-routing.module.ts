@@ -6,8 +6,8 @@ import { NewsComponent } from './news/news.component';
 import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
-import { ProductComponent } from './components/product/product.component';
-import { AnnouncementComponent } from './components/announcement/announcement.component';
+import { ProductoPageComponent } from './producto-page/producto-page.component';
+import { NewPageComponent } from './new-page/new-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -17,8 +17,8 @@ const routes: Routes = [
   { path: 'contact-component', component: ContactComponent},
   { path: 'login-component', component: LoginComponent},
   { path: 'cart-component', component: CartComponent},
-  { path: 'product-component', component: ProductComponent},
-  { path: 'announcement-component', component: AnnouncementComponent}
+  { path: 'producto-page-component', component: ProductoPageComponent},
+  { path: 'new-page-component', component: NewPageComponent}
 ];
 
 @NgModule({

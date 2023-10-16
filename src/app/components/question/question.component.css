@@ -1,0 +1,16 @@
+.form-inline {
+    background-color: var(--colorPrincipal);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.titulo {
+    color: white;
+    font-weight: 700;
+}
+.question {
+    background-color: white;
+    border-radius: 10px;
+}
+.respuesta {
+    padding: 1rem;
+}

@@ -11,10 +11,11 @@ textarea{
     color: white;
 }
 .nav-link {
+    display:inline-block;
     color: var(--colorBG);
 }
 .nav-link:hover {
-    color: #000;
+    border-bottom: 3px solid white;
 }
 .row{
     margin: 0;

@@ -4,6 +4,7 @@
     --color-border: #ff4646;
     --colorSecundario: #FF7D66; /*Salmon*/
     --colorBG: #FFFFFF; /*White*/
+    --colorBGSoft: #F5F5F5; 
     --colorExtra: #5CE1E6; /*Electric blue*/
 }
 /*----------------------------------------------------------------*/
@@ -11,7 +12,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 body {
-    background-color: #F5F5F5;
+    background-color: var(--colorBGSoft);
 }
 i {
     background: none;
@@ -23,7 +24,7 @@ input {
 }
 
 ::placeholder {
-    color: #FF7D66;
+    color: var(--colorSecundario);
     font-style: italic;
 }
 h1 {
@@ -34,7 +35,7 @@ h1 {
     background-color: var(--colorPrincipal);
 }
 .btn-danger:hover {
-    background-color: #C50202;
+    background-color: var(--color-hover);
 }
 .recuadro {
     padding: 20px;
