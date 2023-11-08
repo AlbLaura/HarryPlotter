@@ -1,0 +1,20 @@
+.badge {
+    color: white
+}
+.badge-tazas {
+    background-color: green;
+}
+.badge-posters {
+    background-color: red;
+}
+.badge-stickers {
+    background-color: blue;
+}
+.badge-combos {
+    background-color: yellow;
+    color: darkblue;
+}
+.badge-almohadas {
+    background-color: pink;
+    color: darkmagenta;
+}

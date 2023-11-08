@@ -1,0 +1,37 @@
+<!-- <app-carrousel></app-carrousel> --> <!-- falta agregar imagenes de banners, pero es funcional-->
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-12 banner">
+            <!-- <app-carrousel></app-carrousel> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <app-titulo texto="Ultimos Productos"></app-titulo>
+            <app-card-list></app-card-list>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row"> <!-- aplica un for -->
+                <div class="col-2">
+                    <!-- <app-latest-product [data]="producto" *ngFor="let producto of productos; index as i;"></app-latest-product> -->
+                    <!-- <div>{{i + 1}} - {{producto.title}}</div> -->
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <!-- <app-pagination></app-pagination> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <app-titulo texto="Anuncios Destacados"></app-titulo>
+        </div>
+    </div>
+    <div class="row anuncios-destacados"> <!-- aplica un for -->
+        <div class="col-2">
+            <!-- <app-latest-announcement></app-latest-announcement> -->
+        </div>
+    </div>
+</section>

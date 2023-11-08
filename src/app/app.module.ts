@@ -1,21 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CoreModule } from '@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { FiltroComponent } from './components/filtro/filtro.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
-import { ProductComponent } from './components/product/product.component';
-import { LatestProductComponent } from './components/latest-product/latest-product.component';
-import { ListProductComponent } from './components/list-product/list-product.component';
-import { QuestionComponent } from './components/question/question.component';
-import { HomeComponent } from './home/home.component';
-import { CarrouselComponent } from './components/carrousel/carrousel.component';
-import { LatestAnnouncementComponent } from './components/latest-announcement/latest-announcement.component';
-import { AnnouncementComponent } from './components/announcement/announcement.component';
+
+import { PaginationComponent } from './shared/components/pagination/pagination.component';
+import { QuestionComponent } from './shared/components/question/question.component';
+import { CarrouselComponent } from './shared/components/carrousel/carrousel.component';
+import { AnnouncementComponent } from './shared/components/announcement/announcement.component';
 import { NewsComponent } from './news/news.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
@@ -25,21 +17,24 @@ import { FormCartComponent } from './form-cart/form-cart.component';
 import { ProductoPageComponent } from './producto-page/producto-page.component';
 import { NewPageComponent } from './new-page/new-page.component';
 
+import { SharedModule } from '@shared/shared.module';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { SkeletonComponent } from '@layout/skeleton/skeleton.component';
+import { HeaderComponent } from '@layout/header/header.component';
+import { FooterComponent } from '@layout/footer/footer.component';
+import { NavigationComponent } from '@layout/navigation/navigation.component';
+
 @NgModule({
   declarations: [
     AppComponent,
+    SkeletonComponent,
     HeaderComponent,
-    NavbarComponent,
-    FooterComponent,
-    FiltroComponent,
+    FooterComponent, 
+    NavigationComponent,
+    //actualizar ubicacion de componentes V
     PaginationComponent,
-    ProductComponent,
-    LatestProductComponent,
-    ListProductComponent,
     QuestionComponent,
-    HomeComponent,
     CarrouselComponent,
-    LatestAnnouncementComponent,
     AnnouncementComponent,
     NewsComponent,
     ContactComponent,
@@ -52,9 +47,17 @@ import { NewPageComponent } from './new-page/new-page.component';
   ],
   imports: [
     BrowserModule,
+    //Core
+    CoreModule,
+    SharedModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

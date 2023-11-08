@@ -1,0 +1,16 @@
+<div class="card mb-2" *ngIf="data">
+    <div class="card-header d-flex justify-content-center">
+        <img class="img-thumbnail imagen" src="{{data.image}}" alt="Imagen del producto">
+    </div>
+    <div class="card-body">
+        <div class="card-info">
+            <h6 class="card-title">{{data.title}}</h6>
+            <span class="card-category badge badge-secondary">{{data.category}}</span>
+            <p class="card-text">{{data.description}}</p>
+        </div>
+        <div class="card-items d-flex justify-content-between mt-2">
+            <span class="precio">$ {{data.price}}</span>
+            <button class="btn btn-danger"><a routerLink="/producto-page-component" routerLinkActive="active" ariaCurrentWhenActive="page">Comprar</a></button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.precio {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}

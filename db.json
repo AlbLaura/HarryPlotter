@@ -2,27 +2,27 @@
     "category": [
         {
             "id": 1,
-            "titulo": "taza polimero",
+            "titulo": "tazas",
             "color": "green"
         },
         {
             "id": 2,
-            "titulo": "Poster carton sublimado",
+            "titulo": "posters",
             "color": "red"
         },
         {
             "id": 3,
-            "titulo": "almohada 30x30",
+            "titulo": "almohadas",
             "color": "pink"
         },
         {
             "id": 4,
-            "titulo": "calco 7x7",
+            "titulo": "stickers",
             "color": "blue"
         },
         {
             "id": 5,
-            "titulo": "taza vidrio esmerilado",
+            "titulo": "combos",
             "color": "yellow"
         }
     ],
