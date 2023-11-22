@@ -1,8 +1,6 @@
 <!-- Visualizacion del producto/noticia en formato cuadricula -->
 <div class="card mb-2" *ngIf="data">
-    <div class="card-header d-flex justify-content-center">
-        <img class="img-thumbnail imagen" src="{{data.image}}" alt="Imagen del producto">
-    </div>
+    <img class="card-img-top" src="{{data.image}}" alt="Imagen del producto">
     <div class="card-body">
         <div class="card-info mb-2">
             <h6 class="card-title">{{data.title}}</h6>
@@ -11,7 +9,7 @@
         </div>
         <div class="card-items d-flex justify-content-between">
             <span class="precio">$ {{data.price}}</span>
-            <app-button colorButton="danger" routerLink="/producto-page-component" routerLinkActive="active" ariaActive="page"></app-button>
+            <app-button colorButton="danger" routerLink="/home/producto-detalle/{{data.id}}" routerLinkActive="active" ariaActive="page" textButton="Ver producto"></app-button>
         </div>
     </div>
 </div>

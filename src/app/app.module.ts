@@ -4,18 +4,13 @@ import { CoreModule } from '@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { PaginationComponent } from './shared/components/pagination/pagination.component';
-import { QuestionComponent } from './shared/components/question/question.component';
-import { CarrouselComponent } from './shared/components/carrousel/carrousel.component';
-import { AnnouncementComponent } from './shared/components/announcement/announcement.component';
-import { NewsComponent } from './news/news.component';
-import { ContactComponent } from './contact/contact.component';
-import { LoginComponent } from './login/login.component';
-import { CategoriasComponent } from './categorias/categorias.component';
-import { CartComponent } from './cart/cart.component';
-import { FormCartComponent } from './form-cart/form-cart.component';
-import { ProductoPageComponent } from './producto-page/producto-page.component';
-import { NewPageComponent } from './new-page/new-page.component';
+import { ContactComponent } from './modules/home/contact/contact.component';
+import { LoginComponent } from './modules/home/login/login.component';
+import { CartComponent } from './modules/home/cart/cart.component';
+import { FormCartComponent } from './modules/home/form-cart/form-cart.component';
+import { CategoriesComponent } from '@modules/home/categories/categories.component';
+import { NewsDetailComponent } from '@modules/home/news-detail/news-detail.component';
+import { ProductDetailComponent } from '@modules/home/product-detail/product-detail.component';
 
 import { SharedModule } from '@shared/shared.module';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
@@ -31,19 +26,13 @@ import { NavigationComponent } from '@layout/navigation/navigation.component';
     HeaderComponent,
     FooterComponent, 
     NavigationComponent,
-    //actualizar ubicacion de componentes V
-    PaginationComponent,
-    QuestionComponent,
-    CarrouselComponent,
-    AnnouncementComponent,
-    NewsComponent,
     ContactComponent,
     LoginComponent,
-    CategoriasComponent,
     CartComponent,
     FormCartComponent,
-    ProductoPageComponent,
-    NewPageComponent
+    CategoriesComponent,
+    NewsDetailComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

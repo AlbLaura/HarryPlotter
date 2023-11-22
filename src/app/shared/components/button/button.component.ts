@@ -11,4 +11,5 @@ export class ButtonComponent {
   @Input() routerLinkActive: IButton;
   @Input() ariaActive: IButton;
   @Input() colorButton: IButton;
+  @Input() textButton: IButton;
 }

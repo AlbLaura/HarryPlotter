@@ -1,11 +1,10 @@
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
 .card-title {
     font-weight: 700;
     font-size: 2rem;
-}
-.precio {
-    align-self: center;
-    font-size: 1.3rem;
-    font-weight: 700;
 }
 .card-text {
     display: -webkit-box;
@@ -13,4 +12,9 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.precio {
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 700;
 }

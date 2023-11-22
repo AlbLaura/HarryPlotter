@@ -4,11 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import * as fromComponents from './components';
-import { CardViewListaComponent } from './components/cards/card-view-lista/card-view-lista.component';
-import { BadgeTazasComponent } from './components/badges/badge-tazas/badge-tazas.component';
 import { RouterModule } from '@angular/router';
-import { ButtonComponent } from './components/button/button.component';
-
 
 @NgModule({
   imports: [
@@ -18,7 +14,7 @@ import { ButtonComponent } from './components/button/button.component';
     CommonModule,
     RouterModule
   ],
-  declarations: [...fromComponents.components, CardViewListaComponent, BadgeTazasComponent, ButtonComponent],
+  declarations: [...fromComponents.components],
   exports: [
     FormsModule,
     ReactiveFormsModule,
