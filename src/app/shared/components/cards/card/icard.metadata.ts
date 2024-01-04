@@ -6,4 +6,5 @@ export interface ICard {
     price: number;
     category: string;
     cant?: number;
+    subcategory?: number;
 }

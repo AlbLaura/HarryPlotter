@@ -6,14 +6,17 @@
         </div>
     </div>
     <div class="row">
-        <div class="col text-center">
-            <app-titulo texto="Ultimos Productos"></app-titulo>
+        <div class="col">
+            <div class="d-flex justify-content-center">
+                <app-titulo texto="Ultimos Productos" type="edit"></app-titulo>
+                <app-modal type="add"></app-modal>
+            </div>
             <app-card-list></app-card-list>
         </div>
     </div>
     <div class="row">
-        <div class="col text-center">
-            <app-titulo texto="Anuncios Destacados"></app-titulo>
+        <div class="col">
+            <app-titulo texto="Anuncios Destacados" type="add"></app-titulo>
         </div>
     </div>
     <div class="row anuncios-destacados"> <!-- aplica un for -->

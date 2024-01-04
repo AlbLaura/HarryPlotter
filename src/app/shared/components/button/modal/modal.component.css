@@ -1,0 +1,21 @@
+.button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+i {
+    padding-top: .2rem;
+}
+.-delete {
+    background-color: red;
+    color: white;
+}
+.-add {
+    background-color: blue;
+    color: white;
+}
+.-edit {
+    background-color: green;
+    color: white;
+}

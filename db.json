@@ -3,76 +3,135 @@
         {
             "id": 1,
             "titulo": "tazas",
-            "color": "green"
+            "subcategory": [
+                {
+                    "id": 101,
+                    "title": "vidrio"
+                },
+                {
+                    "id": 102,
+                    "title": "vidrio esmerilado"
+                },
+                {
+                    "id": 103,
+                    "title": "aluminio"
+                }
+            ]
         },
         {
             "id": 2,
             "titulo": "posters",
-            "color": "red"
+            "subcategory": [
+                {
+                    "id": 201,
+                    "title": "sublimado"
+                }
+            ]
         },
         {
             "id": 3,
             "titulo": "almohadas",
-            "color": "pink"
+            "subcategory": [
+                {
+                    "id": 301,
+                    "title": "pequeñas"
+                },
+                {
+                    "id": 302,
+                    "title": "medianas"
+                },
+                {
+                    "id": 303,
+                    "title": "grandes"
+                }
+            ]
         },
         {
             "id": 4,
             "titulo": "stickers",
-            "color": "blue"
+            "subcategory": [
+                {
+                    "id": 401,
+                    "title": "pequeños"
+                },
+                {
+                    "id": 402,
+                    "title": "grandes"
+                }
+            ]
         },
         {
             "id": 5,
             "titulo": "combos",
-            "color": "yellow"
+            "subcategory": [
+                {
+                    "id": 501,
+                    "title": "2 unidades"
+                },
+                {
+                    "id": 502,
+                    "title": "4 unidades"
+                }
+            ]
         }
     ],
-    "productos": [
+    "products": [
         {
             "id": 1,
             "title": "Pikachu",
-            "category": 1,
-            "description": "Producto tal y tal",
-            "image": "url",
-            "price": 1000
+            "image": "../assets/banner-image.png",
+            "category_id": 2,
+            "subcategory_id": 201,
+            "price": 500,
+            "cant": 100,
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?"
         },
         {
             "id": 2,
-            "title": "Mario",
-            "category": 2,
-            "description": "Producto tal y tal",
-            "image": "url",
-            "price": 500
+            "title": "Pikachu",
+            "image": "../assets/banner-image.png",
+            "category_id": 3,
+            "subcategory_id": 301,
+            "price": 500,
+            "cant": 100,
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?"
         },
         {
-            "id": 3,
-            "title": "Link",
-            "category": 3,
-            "description": "Producto tal y tal",
-            "image": "url",
-            "price": 2000
+            "id": 1,
+            "title": "Pikachu",
+            "image": "../assets/banner-image.png",
+            "category_id": 1,
+            "subcategory_id": 101,
+            "price": 500,
+            "cant": 100,
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?"
         },
         {
-            "id": 4,
-            "title": "Skye",
-            "category": 4,
-            "description": "Producto tal y tal",
-            "image": "url",
-            "price": 100
+            "id": 1,
+            "title": "Pikachu",
+            "image": "../assets/banner-image.png",
+            "category_id": 4,
+            "subcategory_id": 401,
+            "price": 500,
+            "cant": 100,
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?"
         },
         {
-            "id": 5,
-            "title": "Yoru",
-            "category": 5,
-            "description": "Producto tal y tal",
-            "image": "url",
-            "price": 1700
+            "id": 1,
+            "title": "Pikachu",
+            "image": "../assets/banner-image.png",
+            "category_id": 5,
+            "subcategory_id": 501,
+            "price": 500,
+            "cant": 100,
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?"
         }
     ],
-    "contacto": [
+    "contact": [
         {
             "id": 1,
             "nombre": "Adrian Ezequiel Lopez",
-            "rol": "admin",
+            "rol": "ADMIN",
             "redes": [
                 {
                     "titulo": "Instagram",
@@ -95,7 +154,7 @@
         {
             "id": 2,
             "nombre": "Laura Soledad Albornoz",
-            "rol": "programador",
+            "rol": "DEV",
             "redes": [
                 {
                     "titulo": "GitHub",
@@ -103,11 +162,11 @@
                 },
                 {
                     "titulo": "Discord",
-                    "usuario": "@harryplotter22"
+                    "usuario": "alb_laura"
                 },
                 {
                     "titulo": "Twitter",
-                    "usuario": "@harryplotter22"
+                    "usuario": "@Alb_Laura_"
                 }
             ]
         }
