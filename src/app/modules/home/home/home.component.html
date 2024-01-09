@@ -1,13 +1,12 @@
-<!-- <app-carrousel></app-carrousel> --> <!-- falta agregar imagenes de banners, pero es funcional-->
 <section class="container-fluid">
     <div class="row">
         <div class="col-12 banner">
-            <!-- <app-carrousel></app-carrousel> -->
+            <app-carrousel></app-carrousel> <!-- falta agregar imagenes de banners, pero es funcional-->
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center titulo">
                 <app-titulo texto="Ultimos Productos" type="edit"></app-titulo>
                 <app-modal type="add"></app-modal>
             </div>
@@ -16,12 +15,11 @@
     </div>
     <div class="row">
         <div class="col">
-            <app-titulo texto="Anuncios Destacados" type="add"></app-titulo>
+            <div class="d-flex justify-content-center titulo">
+                <app-titulo texto="Anuncios Destacados" type="add"></app-titulo>
+                <app-modal type="add"></app-modal>
+            </div>
         </div>
-    </div>
-    <div class="row anuncios-destacados"> <!-- aplica un for -->
-        <div class="col-2">
-            <!-- <app-latest-announcement></app-latest-announcement> -->
-        </div>
+        <app-card-list></app-card-list>
     </div>
 </section>

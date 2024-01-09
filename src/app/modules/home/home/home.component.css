@@ -1,3 +1,13 @@
+.container-fluid {
+    padding-bottom: 5rem;
+}
+.titulo {
+    margin: 5rem;
+}
+app-modal {
+    display: none;
+    margin-left: 2rem;
+}
 .anuncios-destacados {
     margin-bottom: 2rem;
 }
