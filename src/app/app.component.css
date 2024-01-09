@@ -1,0 +1,13 @@
+#scroll-top {
+    /* display: none; */
+    position: fixed;
+    bottom: 4rem;
+    right: 3rem;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+#scroll-top:hover {
+    color: red;
+}
