@@ -1,27 +1,31 @@
 # HarryPlotter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Proyecto final para la **Practica Profesional** de la **Tecnicatura de Diseño y Desarrollo de Videojuegos**
+Se trata de un E-Commerce o tienda digital para un cliente que vende productos sublimados de tematica geek.
 
-## Development server
+Consta _(por ahora)_ de un login para el usuario y el administrador, dependiendo de quien ingrese es lo que se podra realizar en la página. 
+Si entra el administrador, tiene la posibilidad de **agregar, editar o eliminar** productos/noticias (CRUD). Si el que entra es el usuario-cliete, le habilita la posibilidad de registrar productos para comprar online (por _default_ el carrito esta deshabilitado)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+En el encabezado tenemos el nombre de la empresa, una barra de busqueda local y las redes sociales. Luego estará el navegador donde estan las paginas disponibles, login y carrito del usuario.
+El pie de pagina se encuentra el logo y nombre de la empresa, acceso directo a paginas mas visitadas y un formulario de contacto.
+Tenemos distintas paginas las cuales son:
+* "Home" contiene un carrusel con banners de noticias o descuentos, los ultimos productos agregados y las ultimas noticias publicadas.
+* "categorias" es donde se muestran todos los productos disponibles organizados por categorias y subcategorias.
+* "anuncios" contiene todos los anuncios publicados por el administrador
+* "contacto" muestra las preguntas frecuentes que pueda tener algun cliente con su respuesta y la informacion de la empresa 
+* "cuenta" es donde se tiene que loggear el usuario-cliente para poder realizar compras y en donde se loggea el administrador para realizar cambios en los items
+* "carrito" principalmente desactivado hasta que un usuario inicie sesion, luego mostrara los productos registrados o no.
+  Si continua la compra, lo lleva al siguiente apartado, mostrando los productos a comprar, metodo de pago y si tiene descuento o no. Luego se emitira la factura al cliente y administrador.
 
-## Code scaffolding
+# Explicacion de carpetas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**db.json** contiene temporalmente toda la informacion de los productos y noticias, con sus categorias y subcategorias. Tambien esta la info del dev y autor.
 
-## Build
+Todo archivo _.spec_ es para realizar testeos (Aun no se bien de este tema)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*tsconfig.json | tsconfig.app.json | package.json | package-lock.json | angular.json* son archivos de configuracion para la aplicacion. Los mas usados son *package.json* y *tsconfig.json*
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*src* es en donde se encuentra toda la app. Donde existe un _index.html, main.ts y styles.css_ que son sus archivos base. luego tendremos distintas carpetas
+*assets* donde se guardan las imagenes/videos u otros archivos multimedia que utilice la app
+*environments* es donde se ejecuta el environment de desarrollo o el environment de produccion (actualmente en desarrollo)
+*app* es la carpeta raiz, donde estan todo el mvc (modulos, vistas, componentes)
