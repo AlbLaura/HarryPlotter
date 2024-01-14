@@ -23,9 +23,9 @@ Tenemos distintas paginas las cuales son:
 
 Todo archivo _.spec_ es para realizar testeos (Aun no se bien de este tema)
 
-*tsconfig.json | tsconfig.app.json | package.json | package-lock.json | angular.json* son archivos de configuracion para la aplicacion. Los mas usados son *package.json* y *tsconfig.json*
+**tsconfig.json | tsconfig.app.json | package.json | package-lock.json | angular.json** son archivos de configuracion para la aplicacion. Los mas usados son **package.json** y **tsconfig.json** (configuracion del compilador para typescript a javascript)
 
-*src* es en donde se encuentra toda la app. Donde existe un _index.html, main.ts y styles.css_ que son sus archivos base. luego tendremos distintas carpetas
-*assets* donde se guardan las imagenes/videos u otros archivos multimedia que utilice la app
-*environments* es donde se ejecuta el environment de desarrollo o el environment de produccion (actualmente en desarrollo)
-*app* es la carpeta raiz, donde estan todo el mvc (modulos, vistas, componentes)
+**src** es en donde se encuentra toda la app. Donde existe un _index.html, main.ts y styles.css_ que son sus archivos base. luego tendremos distintas carpetas
+**assets** donde se guardan las imagenes/videos u otros archivos multimedia que utilice la app
+**environments** es donde se ejecuta el environment de desarrollo o el environment de produccion (actualmente en desarrollo)
+**app** es la carpeta raiz, donde estan todo el mvc (modulos, vistas, componentes)
