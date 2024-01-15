@@ -15,17 +15,17 @@ const routes: Routes = [
       {
         path: 'home',
         loadChildren: () => 
-          import('@modules/home/home.module').then( (m) => m.HomeModule)
+          import('@modules/routing/home.module').then( (m) => m.HomeModule)
       },
       {
         path: 'categorias',
         loadChildren: () =>
-          import('@modules/categories/categories.module').then( (m) => m.CategoriesModule)
+          import('@modules/routing/categories.module').then( (m) => m.CategoriesModule)
       },
       {
         path: 'contacto',
         loadChildren: () =>
-          import('@modules/contact/contact.module').then( (m) => m.ContactModule)
+          import('@modules/routing/contact.module').then( (m) => m.ContactModule)
       },
       /* {
         path: 'anuncios',
