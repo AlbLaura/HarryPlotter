@@ -1,0 +1,21 @@
+.loader {
+    margin: auto;
+    border: 16px solid var(--colorBGSoft);
+    border-top: 16px solid var(--colorPrincipal);
+    border-radius: 50%;
+    width: 7.5rem; /*120px*/
+    height: 7.5rem;
+    z-index: 1;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}

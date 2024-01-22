@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './carrousel.component.html',
   styleUrls: ['./carrousel.component.css']
 })
-export class CarrouselComponent {
-
-}
+export class CarrouselComponent {}

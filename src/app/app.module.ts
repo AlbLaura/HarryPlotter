@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CoreModule } from '@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 import { ContactComponent } from './modules/contact/contact.component';
 import { LoginComponent } from './modules/login/login.component';
@@ -18,6 +19,7 @@ import { SkeletonComponent } from '@layout/skeleton/skeleton.component';
 import { HeaderComponent } from '@layout/header/header.component';
 import { FooterComponent } from '@layout/footer/footer.component';
 import { NavigationComponent } from '@layout/navigation/navigation.component';
+import { FormContactComponent } from './modules/form-contact/form-contact.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +34,12 @@ import { NavigationComponent } from '@layout/navigation/navigation.component';
     FormCartComponent,
     CategoriesComponent,
     NewsDetailComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    FormContactComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     //Core
     CoreModule,
     SharedModule,

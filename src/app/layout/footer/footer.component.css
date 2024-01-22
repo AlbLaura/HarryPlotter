@@ -2,9 +2,6 @@ section {
     background-color: var(--colorPrincipal);
     color: white;
 }
-textarea{
-    resize: none;
-}
 
 #logo h1{
     font-family: 'Berkshire Swash', cursive;

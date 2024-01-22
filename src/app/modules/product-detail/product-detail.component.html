@@ -1,5 +1,5 @@
 <div class="container">
-    <section class="mt-3 mb-3 row">
+    <section class="mt-3 mb-3 row animate-bottom" *ngIf="currentProduct; else loaderComponent;">
         <img class="imagen img-thumbnail col-6" src="{{currentProduct.image}}" alt="Imagen de la noticia">
         <div class="col-6">
             <h1 class="titulo">{{currentProduct.title}}</h1>
@@ -17,7 +17,10 @@
             </div>
         </div>
     </section>
-    <section class="ultimos-productos mb-4">
+    <ng-template #loaderComponent>
+        <app-loader></app-loader>
+    </ng-template>
+    <section class="ultimos-productos mt-5">
         <h2 class="titulo-un text-center">Ultimos Productos</h2>
         <hr>
         <div class="row">

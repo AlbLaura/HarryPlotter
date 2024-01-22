@@ -13,19 +13,8 @@
             <li class="nav-item"><a routerLink="/categorias-component" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Almohadones</a></li>
         </ul>
     </div>
-    <address class="form-contacto col-5 mt-4">
-        <form action="#">
-            <app-titulo texto="Contactame" type="white"></app-titulo>
-            <div class="form-group">
-                <label for="nombre" class="col">Nombre</label>
-                <input name="nombre" class="col form-control" id="nombre" type="text" placeholder="Laura Albornoz">
-            </div>
-            <div class="form-group">
-                <label for="mensaje" class="col">Mensaje</label>
-                <textarea name="mensaje" class="col form-control" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
-            </div>
-            <button class="btn btn-light" type="submit">Enviar mensaje</button>
-        </form>
+    <address class="col-5 mt-4">
+        <app-form-contact></app-form-contact>
     </address>
 </section>
 <section class="row text-center">

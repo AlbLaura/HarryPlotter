@@ -12,6 +12,7 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { QuestionComponent } from './question/question.component';
 import { ModalComponent } from './button/modal/modal.component';
+import { LoaderComponent } from './loader/loader.component';
 
 export const components: any[] = [
     TituloComponent,
@@ -25,7 +26,8 @@ export const components: any[] = [
     CarrouselComponent,
     PaginationComponent,
     QuestionComponent,
-    ModalComponent
+    ModalComponent,
+    LoaderComponent
 ];
 
 //export all componentes
@@ -39,6 +41,7 @@ export * from './cards/card-view-lista/card-view-lista.component';
 export * from './button/button.component';
 export * from './badges/badge-tazas/badge-tazas.component';
 export * from './button/modal/modal.component';
+export * from './loader/loader.component';
 
 export * from './announcement/announcement.component';
 export * from './carrousel/carrousel.component';

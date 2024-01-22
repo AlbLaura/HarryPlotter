@@ -1,0 +1,16 @@
+<form action="#" method="post" class="form-contacto" id="form-contacto">
+    <app-titulo texto="Contactame" type="white"></app-titulo>
+    <div class="form-group">
+        <label for="nombre" class="col">Nombre</label>
+        <input name="user_nombre" class="col form-control" id="nombre" type="text" placeholder="Laura Albornoz" [(ngModel)]="persona.nombre">
+    </div>
+    <div class="form-group">
+        <label for="email" class="col">Email</label>
+        <input name="user_email" class="col form-control" id="email" type="email" placeholder="a.a@gmail.com" [(ngModel)]="persona.email">
+    </div>
+    <div class="form-group">
+        <label for="mensaje" class="col">Mensaje</label>
+        <textarea name="user_mensaje" class="col form-control" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..." [(ngModel)]="persona.mensaje"></textarea>
+    </div>
+    <button class="btn btn-light" type="submit">Enviar mensaje</button>
+</form>
