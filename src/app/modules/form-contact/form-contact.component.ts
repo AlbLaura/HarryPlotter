@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
 })
 export class FormContactComponent {
   persona = {
-    nombre: 'Laura',
-    email: 'albornoz.laurasol@gmail.com',
-    mensaje: 'holaaaa'
+    nombre: '',
+    email: '',
+    mensaje: ''
   };
 
-  
+  procesarMensaje() {
+    return console.log(this.persona);
+  }  
 }
