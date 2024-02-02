@@ -13,6 +13,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import { QuestionComponent } from './question/question.component';
 import { ModalComponent } from './button/modal/modal.component';
 import { LoaderComponent } from './loader/loader.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 export const components: any[] = [
     TituloComponent,
@@ -27,7 +28,8 @@ export const components: any[] = [
     PaginationComponent,
     QuestionComponent,
     ModalComponent,
-    LoaderComponent
+    LoaderComponent,
+    CategoriasComponent
 ];
 
 //export all componentes
@@ -47,3 +49,4 @@ export * from './announcement/announcement.component';
 export * from './carrousel/carrousel.component';
 export * from './pagination/pagination.component';
 export * from './question/question.component';
+export * from './categorias/categorias.component';
