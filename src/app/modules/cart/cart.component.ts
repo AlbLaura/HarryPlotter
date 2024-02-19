@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent {
-
+export class CartComponent implements OnInit{
+  constructor (private viewportScroller: ViewportScroller) {}
+  ngOnInit() {
+    this.viewportScroller.scrollToPosition([0,0]);
+  }
 }

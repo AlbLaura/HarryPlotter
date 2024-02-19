@@ -1,15 +1,16 @@
 :root {
-    --colorPrincipal: #DD2200; /*Sinopia*/
-    --color-hover: #C50202;
+    --colorPrincipal: #C61E00; /*Sinopia*/
+    --color-hover: #B21B00;
     --color-border: #ff4646;
     --colorSecundario: #FF7D66; /*Salmon*/
     --colorBG: #FFFFFF; /*White*/
     --colorBGSoft: #F5F5F5; 
     --colorExtra: #5CE1E6; /*Electric blue*/
+    --fontFamily: 'Montserrat', sans-serif;
 }
 /*----------------------------------------------------------------*/
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontFamily);
 }
 html {
     scroll-behavior: smooth;
@@ -43,11 +44,11 @@ h1 {
 .button_modal {
     height: 2rem;
     padding: 0 1rem;
-    color: white;
+    color: var(--colorBG);
 }
 .button_modal:hover {
     box-shadow: inset 0px 0px 5px 2px rgb(0, 0, 0, 0.3);
-    color: aliceblue;
+    color: var(--colorBGSoft);
 }
 .recuadro {
     padding: 20px;
