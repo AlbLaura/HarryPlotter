@@ -1,7 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PRODUCTS_DATA } from '@data/constants/products.const';
 import { ProductoService } from '@data/services/api/producto.service';
 import { ICard } from '@shared/components/cards/card/icard.metadata';
 
@@ -11,7 +10,7 @@ import { ICard } from '@shared/components/cards/card/icard.metadata';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  public products: ICard[] = PRODUCTS_DATA;
+  public products: ICard[];
   public id: number;
   public currentProduct: ICard;
   constructor(

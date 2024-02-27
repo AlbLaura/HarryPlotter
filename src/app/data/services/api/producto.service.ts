@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { PRODUCTS_DATA } from '@data/constants/products.const';
 import { ApiClass } from '@data/schema/ApiClass.class';
 import { ICard } from '@shared/components/cards/card/icard.metadata';
 import { Observable, catchError, map } from 'rxjs';
