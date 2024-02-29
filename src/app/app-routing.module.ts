@@ -27,22 +27,21 @@ const routes: Routes = [
         loadChildren: () =>
           import('@modules/routing/contact.module').then( (m) => m.ContactModule)
       },
-      /* {
+      {
         path: 'anuncios',
         loadChildren: () =>
-          import('@modules/home/routing/anuncios.module').then( (m) => m.AnunciosModule)
+          import('@modules/routing/news.module').then( (m) => m.NewsModule)
       },
       {
         path: 'login',
         loadChildren: () =>
-          import('@modules/home/routing/login.module').then( (m) => m.LoginModule)
+          import('@modules/routing/login.module').then( (m) => m.LoginModule)
       },
       {
         path: 'carrito',
         loadChildren: () =>
-          import('@modules/home/routing/cart.module').then( (m) => m.CartModule)
-      }
-      ,*/
+          import('@modules/routing/carrito.module').then( (m) => m.CarritoModule)
+      },
       {
         path: '**', /* personalizar pagina para error 404 */
         redirectTo: '/home',

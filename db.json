@@ -180,6 +180,11 @@
             "id": 1,
             "titulo": "Donde puedo encontrarlos?",
             "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG"
+        },
+        {
+            "id": 2,
+            "titulo": "Donde puedo encontrarlos x2?",
+            "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG. Holisss"
         }
     ]
 }
