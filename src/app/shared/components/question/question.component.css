@@ -6,11 +6,15 @@
 .titulo {
     color: white;
     font-weight: 700;
+    margin: 0;
 }
 .question {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    border: solid 2px var(--colorPrincipal);
+    margin-bottom: .3rem;
 }
 .respuesta {
-    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.2rem;
 }

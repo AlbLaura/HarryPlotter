@@ -20,6 +20,7 @@ import { HeaderComponent } from '@layout/header/header.component';
 import { FooterComponent } from '@layout/footer/footer.component';
 import { NavigationComponent } from '@layout/navigation/navigation.component';
 import { FormContactComponent } from './modules/form-contact/form-contact.component';
+import { NewsComponent } from './modules/news/news.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormContactComponent } from './modules/form-contact/form-contact.compon
     NewsDetailComponent,
     ProductDetailComponent,
     FormContactComponent,
+    NewsComponent,
   ],
   imports: [
     BrowserModule,

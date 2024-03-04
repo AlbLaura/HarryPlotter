@@ -1,6 +1,5 @@
 import { Component} from '@angular/core';
 import { ICard } from '../card/icard.metadata';
-import {PRODUCTS_DATA} from '@data/constants/products.const';
 import { ProductoService } from '@data/services/api/producto.service';
 
 @Component({
