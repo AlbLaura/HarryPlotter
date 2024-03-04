@@ -1,0 +1,7 @@
+.card-header {
+    background-color: var(--colorPrincipal);
+    color: var(--colorBG);
+}
+.color-body {
+    height: auto;
+}

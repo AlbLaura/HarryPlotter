@@ -7,7 +7,7 @@ import { CardListComponent } from './cards/card-list/card-list.component';
 import { ButtonComponent } from './button/button.component';
 import { BadgeTazasComponent } from './badges/badge-tazas/badge-tazas.component';
 import { CardViewListaComponent } from './cards/card-view-lista/card-view-lista.component';
-import { AnnouncementComponent } from './announcement/announcement.component';
+import { CardNewsComponent } from './cards/card-news/card-news.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { QuestionComponent } from './question/question.component';
@@ -23,7 +23,7 @@ export const components: any[] = [
     CardViewListaComponent,
     BadgeTazasComponent,
     ButtonComponent,
-    AnnouncementComponent,
+    CardNewsComponent,
     CarrouselComponent,
     PaginationComponent,
     QuestionComponent,
@@ -40,13 +40,13 @@ export * from './cards/card/card.component';
 export * from './cards/card-list/card-list.component';
 export * from './cards/filtro/filtro.component';
 export * from './cards/card-view-lista/card-view-lista.component';
+export * from './cards/card-news/card-news.component';
 export * from './button/button.component';
 export * from './badges/badge-tazas/badge-tazas.component';
 export * from './button/modal/modal.component';
 export * from './loader/loader.component';
-
-export * from './announcement/announcement.component';
-export * from './carrousel/carrousel.component';
-export * from './pagination/pagination.component';
 export * from './question/question.component';
 export * from './categorias/categorias.component';
+
+export * from './carrousel/carrousel.component';
+export * from './pagination/pagination.component';
