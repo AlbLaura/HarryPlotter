@@ -7,7 +7,9 @@ import { Observable, catchError, map } from 'rxjs';
   providedIn: 'root'
 })
 
-export class ProductoService extends ApiClass{
+export class CardService extends ApiClass{
+
+  /* Llamadas para la card de productos */
 
   /**
   * Trae toda la lista de productos registrados
@@ -51,4 +53,49 @@ export class ProductoService extends ApiClass{
         catchError(this.error)
       );
   };
+
+  /* Llamadas para la card de noticias */
+
+  /**
+  * Trae toda la lista de anuncios publicados
+  */
+  getAllNoticias(): Observable<{
+    error: boolean,
+    msg: string,
+    data: ICard[]
+  }> {
+
+    const response = {error: false, msg: '', data: null};
+
+    return this.http.get<ICard[]>(this.url + 'news')
+    .pipe(
+      map( r => {
+        response.data = r;
+        return response;
+      }),
+      catchError(this.error)
+    );
+  };
+
+  /**
+    Trae un producto en base al ID registrado
+    @param id number
+  */
+    getNoticiasById(id: number): Observable<{
+      error: boolean,
+      msg: string,
+      data: ICard
+    }> {
+  
+      const response = {error: false, msg: '', data: null};
+  
+      return this.http.get<ICard>(this.url + 'news/' + id)
+        .pipe(
+          map( r => {
+            response.data = r;
+            return response;
+          }),
+          catchError(this.error)
+        );
+    };
 }

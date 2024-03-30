@@ -38,7 +38,6 @@ export * from './titulos/titulo/titulo.component';
 export * from './titulos/titulo-h2/titulo-h2.component';
 export * from './cards/card/card.component';
 export * from './cards/card-list/card-list.component';
-export * from './cards/filtro/filtro.component';
 export * from './cards/card-view-lista/card-view-lista.component';
 export * from './cards/card-news/card-news.component';
 export * from './button/button.component';

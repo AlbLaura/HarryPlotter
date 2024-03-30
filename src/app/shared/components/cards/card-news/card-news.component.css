@@ -1,0 +1,4 @@
+.card-cuadricula {
+    display: flex;
+    flex-wrap: wrap;
+}

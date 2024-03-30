@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { ICard } from '../card/icard.metadata';
-import { ProductoService } from '@data/services/api/producto.service';
+import { CardService } from '@data/services/api/card.service';
 
 @Component({
   selector: 'app-card-list',
@@ -8,15 +8,14 @@ import { ProductoService } from '@data/services/api/producto.service';
   styleUrls: ['./card-list.component.css']
 })
 export class CardListComponent{
-  public products: ICard[]/* PRODUCTS_DATA */;
-  
+
+  public ICardProductos: ICard[];
   constructor (
-    private productService: ProductoService
+    private CardService: CardService
   ) {
-    this.productService.getAllProductos().subscribe( r => {
+    this.CardService.getAllProductos().subscribe( r => {
       if(!r.error) {
-        this.products = r.data;
-        console.log(r.data)
+        this.ICardProductos = r.data;
       }
     });
   }

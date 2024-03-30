@@ -119,6 +119,21 @@
         "cant": 50
     }
     ],
+    "news": [
+        {
+            "id": 1,
+            "title": "Nueva noticia: Llegaron productos nuevos al local",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
+            "category": "holatest",
+            "image": "../assets/console.png"
+        },
+        {
+            "id": 2,
+            "title": "Nueva noticia: Llegaron productos nuevos al local",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
+            "image": "../assets/console.png"
+        }
+    ],
     "contacto_personal": [
         {
             "id": 1,

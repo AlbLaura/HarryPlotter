@@ -1,15 +1,15 @@
-<!-- Visualizacion del producto/noticia en formato cuadricula -->
+<!-- Visualizacion del producto en formato cuadricula -->
 <div class="card mb-2" *ngIf="data">
     <img class="card-img-top" src="{{data.image}}" alt="Imagen del producto">
     <div class="card-body">
         <div class="card-info mb-2">
             <h6 class="card-title">{{data.title}}</h6>
-            <app-badge-tazas [category]="data.category" class="d-flex justify-content-around"></app-badge-tazas>
+            <app-badge-tazas [category]="data.category" class="d-flex justify-content-around" *ngIf="data.category"></app-badge-tazas>
             <p class="card-text text-justify mt-2">{{data.description}}</p>
         </div>
         <div class="card-items d-flex justify-content-between">
-            <span class="precio">$ {{data.price}}</span>
-            <app-button colorButton="danger" routerLink="/home/producto-detalle/{{data.id}}" routerLinkActive="active" ariaActive="page" textButton="Ver producto"></app-button>
+            <span class="precio" *ngIf="data.price">$ {{data.price}}</span>
+            <app-button colorButton="danger" routerLink="/home/producto-detalle/{{data.id}}" routerLinkActive="active" ariaActive="page" textButton="Ver Info"></app-button>
         </div>
     </div>
 </div>

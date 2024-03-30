@@ -1,7 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProductoService } from '@data/services/api/producto.service';
+import { CardService } from '@data/services/api/card.service';
 import { ICard } from '@shared/components/cards/card/icard.metadata';
 
 @Component({
@@ -15,7 +15,7 @@ export class ProductDetailComponent implements OnInit {
   public currentProduct: ICard;
   constructor(
     private route:ActivatedRoute,
-    private productoService:ProductoService,
+    private CardService:CardService,
     private viewportScroller: ViewportScroller
   ){
     this.id = +this.route.snapshot.params["id"]; /* "id" viene como string, al agregarle un + adelante se convierte en number */
@@ -25,7 +25,7 @@ export class ProductDetailComponent implements OnInit {
   ngOnInit(): void {
     this.viewportScroller.scrollToPosition([0,0]);
     
-    this.productoService.getProductosById(this.id).subscribe(r => {
+    this.CardService.getProductosById(this.id).subscribe(r => {
       if (!r.error) {
         this.currentProduct = r.data;
       }

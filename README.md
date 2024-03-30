@@ -14,12 +14,11 @@ Tenemos distintas paginas las cuales son:
 * "anuncios" contiene todos los anuncios publicados por el administrador
 * "contacto" muestra las preguntas frecuentes que pueda tener algun cliente con su respuesta y la informacion de la empresa 
 * "cuenta" es donde se tiene que loggear el usuario-cliente para poder realizar compras y en donde se loggea el administrador para realizar cambios en los items
-* "carrito" principalmente desactivado hasta que un usuario inicie sesion, luego mostrara los productos registrados o no.
-  Si continua la compra, lo lleva al siguiente apartado, mostrando los productos a comprar, metodo de pago y si tiene descuento o no. Luego se emitira la factura al cliente y administrador.
+* "carrito" principalmente desactivado hasta que un usuario inicie sesion, luego mostrara los productos registrados o no. Si continua la compra, lo lleva al siguiente apartado, mostrando los productos a comprar, metodo de pago y si tiene descuento o no. Luego se emitira la factura al cliente y administrador.
 
 # Explicacion de carpetas
 
-**db.json** contiene temporalmente toda la informacion de los productos y noticias, con sus categorias y subcategorias. Tambien esta la info del dev y autor.
+**db.json** contiene temporalmente toda la informacion de los productos y noticias, con sus categorias y subcategorias. Tambien esta la info del dev y autor, preguntas frecuentes.
 
 Todo archivo _.spec_ es para realizar testeos (Aun no se bien de este tema)
 

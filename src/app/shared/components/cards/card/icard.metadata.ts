@@ -3,8 +3,8 @@ export interface ICard {
     image: string;
     title: string;
     description: string;
-    price: number;
-    category: string;
+    price?: number;
+    category?: string;
     cant?: number;
     subcategory?: number;
 }
