@@ -13,18 +13,18 @@ export class ProductDetailComponent implements OnInit {
   public products: ICard[];
   public id: number;
   public currentProduct: ICard;
+
   constructor(
+    private scroll:ViewportScroller,
     private route:ActivatedRoute,
-    private CardService:CardService,
-    private viewportScroller: ViewportScroller
+    private CardService:CardService
   ){
     this.id = +this.route.snapshot.params["id"]; /* "id" viene como string, al agregarle un + adelante se convierte en number */
     //this.currentProduct = this.products.find(product => product.id === this.id);
   }
 
   ngOnInit(): void {
-    this.viewportScroller.scrollToPosition([0,0]);
-    
+    this.scroll.scrollToPosition([0, 0]);
     this.CardService.getProductosById(this.id).subscribe(r => {
       if (!r.error) {
         this.currentProduct = r.data;

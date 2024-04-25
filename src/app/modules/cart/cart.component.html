@@ -1,9 +1,16 @@
-<div class="container">
-    <div class="card">
+<!-- Info: Carrito con lista de productos que encargó el cliente. Puede eliminar o agregar productos, elegir si paga en efectivo o por mercado pago y si quiere descargar un pdf con la información -->
+<section class="container">
+    <!-- Aviso para cuando el usuario NO ha iniciado sesión ngIf="isNotLogged" -->
+    <!-- <div class="card-inicio text-center"> 
+        <app-titulo texto="Ups... No tienes productos en la lista"></app-titulo>
+        <p>Inicia sesión para poder registrar los productos que quieres comprar, gracias!</p>
+    </div> -->
+    <!-- Lista de productos para comprar (Solo se ve si el usuario inició sesión = ngIf="isLogged") -->
+    <div class="card"> 
         <form action="#">
             <h1 class="titulo">Lista de productos</h1>
             <div class="lista-productos">
-                <!-- <app-list-product></app-list-product> --> <!-- aplica un for -->
+                <!-- <app-list-product></app-list-product> aplicar un for para mostrar la lista -->
             </div>
             <hr>
             <div class="total row">
@@ -11,36 +18,41 @@
                     <h3 class="tituloBold">Total</h3>
                 </div>
                 <div class="col-2">
-                    <h4 class="precio">$$$</h4>
+                    <h4 class="precio">$ precioAqui</h4>
                 </div>
             </div>
             <hr>
             <div class="metodo-pago row">
                 <div class="col-9">
                     <h3 class="tituloBold">Formas de pago</h3>
-                    <!-- Toast - Aviso sobre el pago en efectivo-->
-                    <!-- <div class="card bg-info">
+                    <!-- TOAST -> Aviso sobre el pago en efectivo -->
+                    <div class="card bg-info">
                         <span class="card-info text-white">La forma de pago en efectivo es haciendo contacto con el vendedor por medio de WhatsApp, para poder confirmar el lugar de venta.</span>
-                    </div> -->
+                    </div>
                 </div>
-                <div class="form-group col-3 ">
+                <div class="form-group col-3 d-flex justify-content-around">
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" btn-mp checked>Mercado Pago <i class="fa-solid fa-credit-card fa-xl"></i><!-- api de mercado pago-->
+                            <!-- Si esta activo este check, le lleva a la api de mercado pago y prosigue solo -->
+                            <input type="radio" class="form-check-input" btn-mp checked>Mercado Pago <i class="fa-solid fa-credit-card fa-xl"></i>
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" btn-cash>En efectivo <i class="fa-solid fa-money-bill fa-xl"></i><!-- procede al formulario de facturacion -->
+                            <!-- Si esta activo este check, le lleva a la página con el formulario de facturación (el usuario debe rellenarlo con sus datos)-->
+                            <input type="radio" class="form-check-input" btn-cash>En efectivo <i class="fa-solid fa-money-bill fa-xl"></i>
                         </label>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="form-group buttons">
+                <!-- *Todo: Buscar como descargar un pdf con la info mostrada -->
                 <button class="btn btn-outline-info" type="button" btn-pdf>Descargar PDF</button>
-                <button class="btn btn-outline-danger" type="submit" btn-shop>Continuar compra</button>
+                <!-- Continua dependiendo de los checks anteriores. En efectivo => formulario | mercado pago => api de mercado pago (investigar si mp pide los datos del cliente antes o no)-->
+                <button class="btn btn-outline-danger" type="submit" btn-shop><a routerLink="/carrito/formulario" routerLinkActive="active" ariaCurrentWhenActive="page">Continuar compra</a></button>
             </div>
         </form>
     </div>
-</div>
+
+</section>

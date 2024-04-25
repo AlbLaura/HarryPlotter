@@ -1,5 +1,6 @@
+<!-- Formulario de facturación - Solo si el check de "en efectivo" fue elegido, le llevará a esta página-->
 <div class="container">
-    <form action="#"> <!-- formulario de facturacion -->
+    <form action="#"> 
         <div class="row text-center">
             <div class="col">
                 <h1>Datos para la facturación</h1>
@@ -7,16 +8,19 @@
         </div>
         <div class="row">
             <div class="col-6">
+                <!-- Nombre del cliente: mayor a 3 carácteres, sin numeros ni signos. Puede tener mayúsculas o no -->
                 <div class="form-group">
                     <label for="nombre">Nombre</label><br>
                     <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
                     <small id="nombreHelp" class="form-text text-muted">Debe tener mas de 3 caracteres</small>
                 </div>
+                <!-- Provincia del cliente: Puede tener mayúsculas o no, sin numeros ni signos, mayor a 5 carácteres -->
                 <div class="form-group">
                     <label for="provincia">Provincia</label><br>
                     <input type="text" class="form-control" id="provincia" aria-describedby="xHelp">
                     <small id="xHelp" class="form-text text-muted">Debe de tener x cosa jejeej</small>
                 </div>
+                <!-- Email del cliente: Puede tener mayúsculas o no, puede tener números, signos solamente ´@_-.´ , si o si debe terminar con un @a.a o no es valido como email (validación básica de emails) -->
                 <div class="form-group">
                     <label for="email">Email</label><br>
                     <input type="email" class="form-control" id="email" aria-describedby="xHelp">
@@ -24,16 +28,19 @@
                 </div>
             </div>
             <div class="col-6">
+                <!-- Apellido del cliente: mayor a 3 carácteres, sin números ni signos. Puede tener mayúsculas o no -->
                 <div class="form-group">
                     <label for="apellido">Apellido</label><br>
                     <input type="text" class="form-control" id="apellido" aria-describedby="xHelp">
                     <small id="xHelp" class="form-text text-muted">Debe de tener x cosa jejeej</small>
                 </div>
+                <!-- Código Postal del cliente: Incluye números y letras, no incluye signos ni espacios-->
                 <div class="form-group">
                     <label for="codigo-postal">Código Postal</label><br>
                     <input type="text" class="form-control" id="codigo-postal" aria-describedby="xHelp">
                     <small id="xHelp" class="form-text text-muted">Debe de tener x cosa jejeej</small>
-                </div>    
+                </div>
+                <!-- Teléfono del cliente: Unicamente números y signo solamente el ´+´ para el prefijo, no es necesario colocar espacios -->
                 <div class="form-group">
                     <label for="telefono">Teléfono</label><br>
                     <input type="number" class="form-control" id="telefono" aria-describedby="Help">
@@ -41,15 +48,17 @@
                 </div>            
             </div>
         </div>
+        <!-- El cliente revisa de vuelta si esta todo bien con los productos, no puede editarlo, para eso debe de volver a la página anterior -->
         <div class="listado-de-productos">
-            <!-- <app-list-product></app-list-product> --> <!-- quitarle la disminucion/aumento de la cantidad de producto-->
+            <!-- Solo muestra el listado de los productos que va a comprar, no puede editarlos en esta sección -->
+            <!-- <app-list-product></app-list-product> --> 
             <hr>
             <div class="row">
                 <div class="col-10">
                     <h4>Total</h4>
                 </div>
                 <div class="col-2">
-                    <h5>$$$$</h5>
+                    <h5>$ totalAqui</h5>
                 </div>
             </div>
             <div class="row">
@@ -58,10 +67,12 @@
                 </div>
                 <div class="col-5">
                     <p>Pagas en efectivo en el momento de entrega del producto</p>
+                    <span>Si deseas cambiar tu forma de pago, vuelve un paso atrás para poder editarlo</span>
                 </div>
             </div>
         </div>
         <div class="row">
+            <!-- Se habilita el botón una vez esten todos los inputs con información dentro, puede descargar un pdf de este formulario -->
             <div class="col-6"><button class="btn btn-outline-info" type="button">Descargar PDF de la compra</button></div>
             <div class="col-6 d-flex justify-content-end"><button class="btn btn-danger" type="submit">Confirmar compra</button></div>
         </div>

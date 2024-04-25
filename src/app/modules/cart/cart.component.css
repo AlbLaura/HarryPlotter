@@ -38,3 +38,6 @@ hr {
     border: 1px solid red;
     border-radius: 5px;
 }
+.card-inicio {
+    height: 70vh;
+}

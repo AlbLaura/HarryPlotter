@@ -119,6 +119,15 @@
         "cant": 50
     }
     ],
+    "productos_carrito": [
+        {
+            "id": 1,
+            "title": "Pikachu - Polarizado",
+            "cant": 1,
+            "price": 500,
+            "image": "../assets/banner-image.png"
+        }
+    ],
     "news": [
         {
             "id": 1,

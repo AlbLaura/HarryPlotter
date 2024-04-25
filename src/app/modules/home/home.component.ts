@@ -7,9 +7,10 @@ import { ViewportScroller } from '@angular/common';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+  constructor (private viewportScroller: ViewportScroller) {}
 
-  constructor () {
+  ngOnInit() {
+    this.viewportScroller.scrollToPosition([0,0]);
   }
-
-  ngOnInit() {}
 }
