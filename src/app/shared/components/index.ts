@@ -29,7 +29,8 @@ export const components: any[] = [
     QuestionComponent,
     ModalComponent,
     LoaderComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    CardNewsComponent
 ];
 
 //export all componentes
@@ -46,6 +47,6 @@ export * from './button/modal/modal.component';
 export * from './loader/loader.component';
 export * from './question/question.component';
 export * from './categorias/categorias.component';
-
+export * from './cards/card-news/card-news.component'
 export * from './carrousel/carrousel.component';
 export * from './pagination/pagination.component';

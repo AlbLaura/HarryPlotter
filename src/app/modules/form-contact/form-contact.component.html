@@ -1,18 +1,26 @@
-<form action="https://formspree.io/f/mayrqjeb" method="POST" class="form-contacto" id="form-contacto">
+<!-- action => https://formspree.io/f/mayrqjeb ?? buscar que era esto -->
+<!-- *(submit)=" " -> Los parentesis son para eventos, el codigo dentro de el igual = "" es el que va a ser ejecutado cuando sea triggered -->
+<form [formGroup]="applyForm" (submit)="submitApplication()" action="#" method="POST" class="form-contacto" id="form-contacto">
+
     <app-titulo texto="Contactame" type="white"></app-titulo>
+
     <div class="form-group">
         <label for="nombre" class="col">Nombre</label>
-        <input name="name" class="col form-control" id="nombre" type="text" placeholder="Laura Albornoz" [(ngModel)]="persona.nombre">
+        <input name="name" class="col form-control" id="nombre" type="text" placeholder="Laura Albornoz" formControlName="name">
     </div>
+    
     <div class="form-group">
         <label for="email" class="col">Email</label>
-        <input name="email" class="col form-control" id="email" type="email" placeholder="a.a@gmail.com" [(ngModel)]="persona.email">
+        <input name="email" class="col form-control" id="email" type="email" placeholder="a.a@gmail.com" formControlName="email">
     </div>
+    
     <div class="form-group">
         <label for="mensaje" class="col">Mensaje</label>
-        <textarea name="message" class="col form-control" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..." [(ngModel)]="persona.mensaje"></textarea>
+        <textarea name="message" class="col form-control" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje..." formControlName="message"></textarea>
     </div>
+    
     <button class="btn btn-light" type="submit">Enviar mensaje</button>
+
 </form>
 
-<!-- {{ persona | json }} --> <!-- al colocar | json al lado, la informacion que se muestra sera en formato json y no como objeto -->
+<!-- {{ persona | json }} => al colocar | json al lado, la informacion que se muestra sera en formato json y no como objeto -->
