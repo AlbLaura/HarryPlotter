@@ -78,7 +78,7 @@ export class CardService extends ApiClass{
   };
 
   /**
-    Trae un producto en base al ID registrado
+    Trae una noticia en base al ID registrado
     @param id number
   */
     getNoticiasById(id: number): Observable<{

@@ -1,17 +1,35 @@
 import { Injectable } from '@angular/core';
 import { ICard } from '@shared/components/cards/card/icard.metadata';
+import { ApiClass } from '@data/schema/ApiClass.class';
+import { Observable, catchError, map } from 'rxjs';
 /* ICard[] listado de los productos registrados en la base de datos */
 
 @Injectable({
   providedIn: 'root'
 })
-export class CartService {
+export class CartService extends ApiClass{
 
-  items:ICard[] = [];
+  items:ICard[];
 
-  /* Añanade un producto nuevo a la lista de productos */
-  addToCart(product:ICard) {
-    this.items.push(product);
+  /* Añade un producto nuevo a la lista de productos | "push" agrega un nuevo item al array*/
+  addToCart(items): Observable<{
+    error: boolean,
+    msg: string,
+    data: ICard[]
+  }> {
+
+    const response = {error: false, msg: '', data: null};
+    //se envia una solicitud POST al endpoint /products pasando el nuevo producto como cuerpo de la solicitud
+    return this.http.post<ICard[]>(this.url + 'products', items)
+    .pipe(
+      map(r => {
+        response.data = r;
+        console.log('hola');
+        return response;
+      }),
+      catchError(this.error)
+    );
+
   };
 
   /* Devuelve la lista de productos */

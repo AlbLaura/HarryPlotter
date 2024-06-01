@@ -13,7 +13,7 @@
                     <li class="page-item active"><a class="page-link"><i class="fa-solid fa-plus"></i></a></li>
                 </ul>
                 <span class="cantidad">Cantidad disponible: {{currentProduct.cant ? currentProduct.cant : 'No hay'}} unidades disponibles</span> <br>
-                <button class="btn btn-outline-danger" type="submit" btn-shop *ngIf="currentProduct.cant">Añadir al carrito</button>
+                <button type="submit" (click)="addToCart(currentProduct)" class="btn btn-outline-danger" btn-shop *ngIf="currentProduct.cant">Añadir al carrito</button>
             </div>
         </div>
     </section>

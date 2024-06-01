@@ -7,5 +7,7 @@ import { ICard } from './icard.metadata';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+
   @Input() data: ICard;
+
 }
