@@ -1,3 +1,5 @@
+// Contiene declaraciones y exportaciones de componentes, directivas y pipes (evitando importaciones)
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
