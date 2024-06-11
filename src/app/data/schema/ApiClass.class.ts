@@ -1,5 +1,5 @@
 // Es una clase generica para extender desde los servicios, nos ayuda a ejecutar nuestros metodos
-import { HttpClient, HttpErrorResponse  } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'environments/environment';
 import { of } from 'rxjs';
