@@ -7,9 +7,9 @@ import { IButton } from './ibutton.metadata';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent {
-  @Input() routerLink: IButton;
-  @Input() routerLinkActive: IButton;
-  @Input() ariaActive: IButton;
-  @Input() colorButton: IButton;
-  @Input() textButton: IButton;
+  @Input() routerLink!: IButton;
+  @Input() routerLinkActive!: IButton;
+  @Input() ariaActive!: IButton;
+  @Input() colorButton!: IButton;
+  @Input() textButton!: IButton;
 }

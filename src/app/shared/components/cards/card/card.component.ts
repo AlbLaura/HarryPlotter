@@ -8,6 +8,6 @@ import { ICard } from './icard.metadata';
 })
 export class CardComponent {
 
-  @Input() data: ICard;
+  @Input() data!: ICard;
 
 }

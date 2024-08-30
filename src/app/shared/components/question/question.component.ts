@@ -7,5 +7,6 @@ import { IQuestion } from './iquestion.metadata';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent {
-  @Input() data: IQuestion;
+  @Input() data!: IQuestion;
+  
 }

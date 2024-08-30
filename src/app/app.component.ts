@@ -8,10 +8,13 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent{
   title = 'HarryPlotter';
-  pageYoffset = 0;
+  scrollY = 0;
 
-  @HostListener('window:scroll', ['$event']) onScroll(event) {
-    this.pageYoffset = window.pageYOffset;
+  //@hostlistener te permite escuchar eventos desde el host element, en este caso seria el scroll del 'window' o la ventana del navegador
+  //['$event'] es un array que contiene el evento del objeto, que se pasara como parametro a la funcion 'onScroll'
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event) {
+    this.scrollY = window.scrollY;
   }
 
   constructor(private scroll: ViewportScroller) {};

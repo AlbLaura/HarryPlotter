@@ -11,9 +11,9 @@ import { ICard } from '@shared/components/cards/card/icard.metadata';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  public products: ICard[];
+  public products!: ICard[];
   public id: number;
-  public currentProduct: ICard;
+  public currentProduct: ICard | null = null;
 
   constructor(
     private scroll: ViewportScroller,
@@ -28,15 +28,19 @@ export class ProductDetailComponent implements OnInit {
   //Desde el inicio desplaza la vista al punto 0,0 y si hay info de ese producto lo muestra, si no sale error.
   ngOnInit(): void {
     this.scroll.scrollToPosition([0, 0]);
+
     this.cardService.getProductosById(this.id).subscribe(r => {
       if (!r.error) {
         this.currentProduct = r.data;
+      } else {
+        //manejamos el error aca
+        console.error('Error al obtener el producto:', r.msg);
       }
     });
   }
 
   //Evento que agrega un producto (data) al carrito y muestra un mensaje de aviso
-  addToCart(data) {
+  addToCart(data:ICard) {
     this.cartService.addToCart(data);
     window.alert('El producto ha sido agregado al carrito!');
   };

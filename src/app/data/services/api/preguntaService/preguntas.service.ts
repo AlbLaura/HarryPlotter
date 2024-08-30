@@ -11,10 +11,12 @@ export class PreguntasService extends ApiClass {
   getAllPreguntas(): Observable<{
     error: boolean,
     msg: string,
-    data: IQuestion[]
+    data: IQuestion[] | null
   }> {
 
-    const response = {error: false, msg: '', data: null};
+    return this.http.get<{ error: boolean; msg: string; data: IQuestion[] | null; }>(this.url + 'preguntas');
+
+    /* const response = {error: false, msg: '', data: null};
 
     return this.http.get<IQuestion[]>(this.url + 'preguntas')
     .pipe(
@@ -23,6 +25,6 @@ export class PreguntasService extends ApiClass {
         return response;
       }),
       catchError(this.error)
-    );
+    ); */
   }
 }

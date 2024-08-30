@@ -1,4 +1,6 @@
-# [HarryPlotter]
+# HarryPlotter
+
+![WebStatus = down](https://img.shields.io/badge/website-down-red)
 
 _Proyecto final para la materia Práctica Profesional de la carrera Tecnicatura en Diseño y Desarrollo de Videojuegos, Universidad de La Punta._
 
@@ -110,8 +112,8 @@ Proyecto/
 Pasos para instalar el proyecto localmente.
 
 ```bash
-git clone https://github.com/usuario/proyecto-ecommerce.git
-cd proyecto-ecommerce
+git clone https://github.com/AlbLaura/HarryPlotter.git
+cd HarryPlotter
 npm install
 ```
 
@@ -119,10 +121,22 @@ npm install
 Instrucciones para configurar el proyecto, incluyendo variables de entorno, archivos de configuración, etc.
 
 ## Uso
-Cómo ejecutar el proyecto localmente.
+Cómo ejecutar el proyecto en desarrollo localmente.
 
 ```bash
-npm run dev
+npm run start:dev
+```
+
+Cómo ejecutar el proyecto en producción localmente.
+
+```bash
+npm run start:prod
+```
+
+Cómo ejecutar la base de datos json provisional localmente.
+
+```bash
+npm run backend
 ```
 
 ## API

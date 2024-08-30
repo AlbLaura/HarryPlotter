@@ -7,6 +7,6 @@ import { ICard } from '../card/icard.metadata';
   styleUrls: ['./card-view-lista.component.css']
 })
 export class CardViewListaComponent {
-  @Input() data: ICard;
+  @Input() data!: ICard;
 
 }

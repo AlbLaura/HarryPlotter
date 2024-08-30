@@ -8,14 +8,14 @@ import { ICard } from '../card/icard.metadata';
   styleUrls: ['./card-news.component.css']
 })
 export class CardNewsComponent {
-  public ICardAnuncios: ICard[];
+  public ICardAnuncios: ICard[] | null = null;
 
-  constructor (
-    private CardService: CardService
-  ) {
+  constructor ( private CardService: CardService ) {
     this.CardService.getAllNoticias().subscribe( r => {
       if(!r.error) {
         this.ICardAnuncios = r.data;
+      } else {
+        console.error('Error al obtener el listado de noticias', r.error);
       }
     })
   }

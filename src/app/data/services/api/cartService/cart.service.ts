@@ -9,16 +9,18 @@ import { Observable, catchError, map } from 'rxjs';
 })
 export class CartService extends ApiClass{
 
-  items:ICard[];
+  items!:ICard[];
 
   /* Añade un producto nuevo a la lista de productos | "push" agrega un nuevo item al array*/
-  addToCart(items): Observable<{
+  addToCart(items: any): Observable<{
     error: boolean,
     msg: string,
-    data: ICard[]
+    data: ICard[] | null
   }> {
 
-    const response = {error: false, msg: '', data: null};
+    return this.http.get<{ error: boolean; msg: string; data: ICard[] | null; }>(this.url + 'products');
+
+    /* const response = {error: false, msg: '', data:null};
     //se envia una solicitud POST al endpoint /products pasando el nuevo producto como cuerpo de la solicitud
     return this.http.post<ICard[]>(this.url + 'products', items)
     .pipe(
@@ -28,8 +30,7 @@ export class CartService extends ApiClass{
         return response;
       }),
       catchError(this.error)
-    );
-
+    ); */
   };
 
   /* Devuelve la lista de productos */

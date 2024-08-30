@@ -7,5 +7,5 @@ import { IBadges } from './ibadges.metadata';
   styleUrls: ['./badge-tazas.component.css']
 })
 export class BadgeTazasComponent {
-  @Input() category: IBadges;
+  @Input() category!: IBadges;
 }

@@ -9,13 +9,15 @@ import { CardService } from '@data/services/api/card.service';
 })
 export class CardListComponent{
   // Guarda la info de los productos disponibles en la BD dentro de una variable
-  public ICardProductos: ICard[];
+  public ICardProductos: ICard[] | null = null;
 
   // recibe la variable y devuelve una lista de los productos si es que no hay errores
   constructor ( private CardService: CardService ) {
     this.CardService.getAllProductos().subscribe( r => {
       if(!r.error) {
         this.ICardProductos = r.data;
+      } else {
+        console.error('Error al obtener el listado:', r.error);
       }
     });
   }
