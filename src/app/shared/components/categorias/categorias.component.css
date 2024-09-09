@@ -1,7 +1,10 @@
-.card-header {
-    background-color: var(--colorPrincipal);
-    color: var(--colorBG);
-}
 .color-body {
     height: auto;
+}
+
+.list-group-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

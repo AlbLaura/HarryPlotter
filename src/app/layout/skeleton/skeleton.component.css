@@ -1,5 +1,5 @@
 .container-fluid {
-    padding: 0 0 5rem;
+    padding: 0 0 5rem 0;
 }
 .content {
     min-height: calc(100vh - 91.56px - 60px - 600px); /* 91.56 = Header | 60px = Navigation | 600px = Footer */

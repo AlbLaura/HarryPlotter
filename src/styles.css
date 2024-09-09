@@ -18,6 +18,12 @@ html {
 body {
     background-color: var(--colorBGSoft);
 }
+a {
+    color: black;
+}
+a:hover {
+    color: var(--colorPrincipal);
+}
 i {
     background: none;
 }
