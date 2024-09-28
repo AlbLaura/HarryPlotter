@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent {
-  @Input() type: 'add' | 'delete' | 'edit' = 'add';
+  @Input() type: 'add' | 'cancel' | 'edit' = 'add';
+  @Input() crud: string = 'Agregar';
+  @Input() modalTitle: string = 'Titulo del Modal';
 }

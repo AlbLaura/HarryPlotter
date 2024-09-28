@@ -12,6 +12,9 @@
 * {
     font-family: var(--fontFamily);
 }
+app-modal {
+    display: show;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -32,7 +35,6 @@ input {
     outline-color: var(--colorPrincipal);
     font-size: 16px;
 }
-
 ::placeholder {
     color: var(--colorSecundario);
     font-style: italic;
@@ -41,6 +43,9 @@ h1 {
     font-size: 3rem;
 }
 
+.container-fluid {
+    padding: 1.2rem 0;
+}
 .btn-danger {
     background-color: var(--colorPrincipal);
 }

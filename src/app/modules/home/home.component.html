@@ -1,25 +1,13 @@
-<section class="container-fluid" id="home">
-    <div class="row">
-        <div class="col-12 banner">
-            <app-carrousel></app-carrousel> <!-- falta agregar imagenes de banners, pero es funcional-->
-        </div>
+<section id="home">
+    <app-carrousel></app-carrousel>
+    <div class="d-flex justify-content-center titulo">
+        <app-titulo texto="Ultimos Productos"></app-titulo>
+        <app-modal type="add"></app-modal>
     </div>
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-center titulo">
-                <app-titulo texto="Ultimos Productos"></app-titulo>
-                <app-modal type="add"></app-modal>
-            </div>
-            <app-card-list></app-card-list>
-        </div>
+    <app-card-list></app-card-list>
+    <div class="d-flex justify-content-center titulo">
+        <app-titulo texto="Anuncios Destacados"></app-titulo>
+        <app-modal type="add"></app-modal>
     </div>
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-center titulo">
-                <app-titulo texto="Anuncios Destacados"></app-titulo>
-                <app-modal type="add"></app-modal>
-            </div>
-        </div>
-        <app-card-list></app-card-list>
-    </div>
+    <app-card-list></app-card-list>
 </section>

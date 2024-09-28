@@ -1,13 +1,10 @@
 .button{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    margin-left: 1rem;
 }
-i {
-    padding-top: .2rem;
+p {
+    margin: 0;
 }
-.-delete {
+.-cancel {
     background-color: red;
     color: white;
 }

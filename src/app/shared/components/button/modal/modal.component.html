@@ -1,3 +1,26 @@
-<div class="button">
-    <i class="fa-solid fa-plus btn btn-modal -{{type}}"></i>
+<!-- [ngClass], [id] y [attr.data-target] son utlizados para vincular dinamicamente texto con el tipo de boton a utilizar -->
+<button type="button" class="button btn btn-modal" [ngClass]="'-' + type" data-toggle="modal" [attr.data-target]="'#' + type + 'Modal'">
+    <p><i class="fa-solid" [ngClass]="'fa-' + type"></i> {{crud}} Item</p>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" [id]="type + 'Modal'">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <div class="modal-title">{{modalTitle}}</div> <!-- El titulo varia segun el id del modal -->
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <ng-content></ng-content> <!-- Esto varia segun el contenido que se pida, si es para add, edit o delete -->
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success">Confirmar</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
 </div>

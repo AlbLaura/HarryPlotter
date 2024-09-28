@@ -1,10 +1,12 @@
 <section class="container-fluid" id="news">
-    <div class="row">
-        <div class="col">
-            <div class="d-flex justify-content-center titulo">
-                <app-titulo texto="Noticias"></app-titulo>
-                <app-modal type="add"></app-modal>
-            </div>
+    <div class="col">
+        <div class="d-flex justify-content-center row">
+            <h2>Noticias</h2>
+            <app-modal type="add" crud="Agregar"></app-modal>
+            <app-modal type="edit" crud="Editar"></app-modal>
+            <app-modal type="cancel" crud="Eliminar"></app-modal>
+        </div>
+        <div class="row">
             <app-card-news></app-card-news>
         </div>
     </div>
