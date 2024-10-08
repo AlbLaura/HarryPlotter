@@ -4,6 +4,7 @@ import { CoreModule } from '@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { ContactComponent } from './modules/contact/contact.component';
 import { LoginComponent } from './modules/login/login.component';
@@ -45,7 +46,8 @@ import { NewsComponent } from './modules/news/news.component';
     //Core
     CoreModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

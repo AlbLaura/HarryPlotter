@@ -1,214 +1,209 @@
 {
-    "category": [
+  "category": [
+    {
+      "id": 1,
+      "titulo": "tazas",
+      "subcategory": [
         {
-            "id": 1,
-            "titulo": "tazas",
-            "subcategory": [
-                {
-                    "id": 101,
-                    "title": "vidrio"
-                },
-                {
-                    "id": 102,
-                    "title": "vidrio esmerilado"
-                },
-                {
-                    "id": 103,
-                    "title": "aluminio"
-                }
-            ]
+          "id": 101,
+          "title": "vidrio"
         },
         {
-            "id": 2,
-            "titulo": "posters",
-            "subcategory": [
-                {
-                    "id": 201,
-                    "title": "sublimado"
-                }
-            ]
+          "id": 102,
+          "title": "vidrio esmerilado"
         },
         {
-            "id": 3,
-            "titulo": "almohadas",
-            "subcategory": [
-                {
-                    "id": 301,
-                    "title": "pequeñas"
-                },
-                {
-                    "id": 302,
-                    "title": "medianas"
-                },
-                {
-                    "id": 303,
-                    "title": "grandes"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "titulo": "stickers",
-            "subcategory": [
-                {
-                    "id": 401,
-                    "title": "pequeños"
-                },
-                {
-                    "id": 402,
-                    "title": "grandes"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "titulo": "combos",
-            "subcategory": [
-                {
-                    "id": 501,
-                    "title": "2 unidades"
-                },
-                {
-                    "id": 502,
-                    "title": "4 unidades"
-                }
-            ]
+          "id": 103,
+          "title": "aluminio"
         }
-    ],
-    "products": [
-    {
-        "id": 1,
-        "title": "Pikachu - Polarizado",
-        "category": "tazas",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
-        "image": "../assets/console.png",
-        "price": 500
+      ]
     },
     {
-        "id": 2,
-        "title": "Pikachu - Polarizado",
-        "category": "posters",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
-        "image": "../assets/banner-image.png",
-        "price": 500,
-        "cant": 100
-    },{
-        "id": 3,
-        "title": "Pikachu - Polarizado",
-        "category": "almohadas",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
-        "image": "../assets/console.png",
-        "price": 500,
-        "cant": 10
+      "id": 2,
+      "titulo": "posters",
+      "subcategory": [
+        {
+          "id": 201,
+          "title": "sublimado"
+        }
+      ]
     },
     {
-        "id": 4,
-        "title": "Pikachu - Polarizado",
-        "category": "stickers",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
-        "image": "../assets/banner-image.png",
-        "price": 500,
-        "cant": 30
-    },{
-        "id": 5,
-        "title": "Pikachu - Polarizado",
-        "category": "combos",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
-        "image": "../assets/console.png",
-        "price": 500,
-        "cant": 50
+      "id": 3,
+      "titulo": "almohadas",
+      "subcategory": [
+        {
+          "id": 301,
+          "title": "pequeñas"
+        },
+        {
+          "id": 302,
+          "title": "medianas"
+        },
+        {
+          "id": 303,
+          "title": "grandes"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "stickers",
+      "subcategory": [
+        {
+          "id": 401,
+          "title": "pequeños"
+        },
+        {
+          "id": 402,
+          "title": "grandes"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "combos",
+      "subcategory": [
+        {
+          "id": 501,
+          "title": "2 unidades"
+        },
+        {
+          "id": 502,
+          "title": "4 unidades"
+        }
+      ]
     }
-    ],
-    "productos_carrito": [
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Pikachu - Polarizado",
+      "category": "tazas",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
+      "image": "../assets/console.png",
+      "price": 500
+    },
+    {
+      "id": 2,
+      "title": "Pikachu - Polarizado",
+      "category": "posters",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
+      "image": "../assets/banner-image.png",
+      "price": 500,
+      "cant": 100
+    },
+    {
+      "id": 3,
+      "title": "Pikachu - Polarizado",
+      "category": "almohadas",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
+      "image": "../assets/console.png",
+      "price": 500,
+      "cant": 10
+    },
+    {
+      "id": 4,
+      "title": "Pikachu - Polarizado",
+      "category": "stickers",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
+      "image": "../assets/banner-image.png",
+      "price": 500,
+      "cant": 30
+    },
+    {
+      "id": 5,
+      "title": "Pikachu - Polarizado",
+      "category": "combos",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
+      "image": "../assets/console.png",
+      "price": 500,
+      "cant": 50
+    }
+  ],
+  "productos_carrito": [
+    {
+      "id": 1,
+      "title": "Pikachu - Polarizado",
+      "cant": 1,
+      "price": 500,
+      "image": "../assets/banner-image.png"
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "Nueva noticia: Llegaron productos nuevos al local",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
+      "category": "holatest",
+      "image": "../assets/console.png"
+    },
+    {
+      "id": 2,
+      "title": "Nueva noticia: Llegaron productos nuevos al local",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
+      "image": "../assets/console.png"
+    }
+  ],
+  "contacto_personal": [
+    {
+      "id": 1,
+      "nombre": "Adrian Ezequiel Lopez",
+      "rol": "ADMIN",
+      "redes": [
         {
-            "id": 1,
-            "title": "Pikachu - Polarizado",
-            "cant": 1,
-            "price": 500,
-            "image": "../assets/banner-image.png"
-        }
-    ],
-    "news": [
-        {
-            "id": 1,
-            "title": "Nueva noticia: Llegaron productos nuevos al local",
-            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
-            "category": "holatest",
-            "image": "../assets/console.png"
+          "titulo": "Instagram",
+          "usuario": "@harryplotter22"
         },
         {
-            "id": 2,
-            "title": "Nueva noticia: Llegaron productos nuevos al local",
-            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
-            "image": "../assets/console.png"
-        }
-    ],
-    "contacto_personal": [
-        {
-            "id": 1,
-            "nombre": "Adrian Ezequiel Lopez",
-            "rol": "ADMIN",
-            "redes": [
-                {
-                    "titulo": "Instagram",
-                    "usuario": "@harryplotter22"
-                },
-                {
-                    "titulo": "Facebook",
-                    "usuario": "@harryplotter22"
-                },
-                {
-                    "titulo": "Twitter",
-                    "usuario": "@harryplotter22"
-                },
-                {
-                    "titulo": "Whatsapp",
-                    "tel": 2665031680
-                },
-                {
-                    "titulo": "Email",
-                    "usuario": "adrianexequiellopez@gmail.com"
-                }
-            ]
+          "titulo": "Facebook",
+          "usuario": "@harryplotter22"
         },
         {
-            "id": 2,
-            "nombre": "Laura Soledad Albornoz",
-            "rol": "DEV",
-            "redes": [
-                {
-                    "titulo": "GitHub",
-                    "usuario": "AlbLaura"
-                },
-                {
-                    "titulo": "Discord",
-                    "usuario": "alb_laura"
-                },
-                {
-                    "titulo": "Twitter",
-                    "usuario": "@Alb_Laura_"
-                }
-            ]
-        }
-    ],
-    "contacto_usuario": [
-        {
-            "id": 1,
-            "user_nombre": "",
-            "user_email": "",
-            "user_mensaje": ""
-        }
-    ],
-    "preguntas": [
-        {
-            "id": 1,
-            "titulo": "Donde puedo encontrarlos?",
-            "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG"
+          "titulo": "Twitter",
+          "usuario": "@harryplotter22"
         },
         {
-            "id": 2,
-            "titulo": "Donde puedo encontrarlos x2?",
-            "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG. Holisss"
+          "titulo": "Whatsapp",
+          "tel": 2665031680
+        },
+        {
+          "titulo": "Email",
+          "usuario": "adrianexequiellopez@gmail.com"
         }
-    ]
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Laura Soledad Albornoz",
+      "rol": "DEV",
+      "redes": [
+        {
+          "titulo": "GitHub",
+          "usuario": "AlbLaura"
+        },
+        {
+          "titulo": "Discord",
+          "usuario": "alb_laura"
+        },
+        {
+          "titulo": "Twitter",
+          "usuario": "@Alb_Laura_"
+        }
+      ]
+    }
+  ],
+  "contacto_usuario": [],
+  "preguntas": [
+    {
+      "id": 1,
+      "titulo": "Donde puedo encontrarlos?",
+      "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG"
+    },
+    {
+      "id": 2,
+      "titulo": "Donde puedo encontrarlos x2?",
+      "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG. Holisss"
+    }
+  ]
 }
