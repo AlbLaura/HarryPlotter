@@ -60,7 +60,7 @@ export class CardService extends ApiClass{
           //se utiliza return of para crear facilmente un observable en caso de error y poder manejar el tipo null
           return of({
             error: true,
-            msg: 'Error al obtener el producto por id:',
+            msg: 'Error al obtener el producto por id:', err,
             data: null
           })
         })

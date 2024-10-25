@@ -11,7 +11,6 @@ import { ICard } from '@shared/components/cards/card/icard.metadata';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
-  public products!: ICard[];
   public id: number;
   public currentProduct: ICard | null = null;
 
@@ -34,6 +33,7 @@ export class ProductDetailComponent implements OnInit {
         this.currentProduct = r.data;
       } else {
         //manejamos el error aca
+        console.log(r.data);
         console.error('Error al obtener el producto:', r.msg);
       }
     });

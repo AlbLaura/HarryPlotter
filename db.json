@@ -78,7 +78,7 @@
   "products": [
     {
       "id": 1,
-      "title": "Pikachu - Polarizado",
+      "title": "Pikachu",
       "category": "tazas",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
       "image": "../assets/console.png",
@@ -86,7 +86,7 @@
     },
     {
       "id": 2,
-      "title": "Pikachu - Polarizado",
+      "title": "The Witcher - Polarizado",
       "category": "posters",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
       "image": "../assets/banner-image.png",
@@ -95,7 +95,7 @@
     },
     {
       "id": 3,
-      "title": "Pikachu - Polarizado",
+      "title": "Mario Bros - Polarizado",
       "category": "almohadas",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
       "image": "../assets/console.png",
@@ -104,7 +104,7 @@
     },
     {
       "id": 4,
-      "title": "Pikachu - Polarizado",
+      "title": "Valorant - Polarizado",
       "category": "stickers",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
       "image": "../assets/banner-image.png",
@@ -113,7 +113,25 @@
     },
     {
       "id": 5,
-      "title": "Pikachu - Polarizado",
+      "title": "Padrinos Magicos - Polarizado",
+      "category": "combos",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
+      "image": "../assets/console.png",
+      "price": 500,
+      "cant": 50
+    },
+    {
+      "id": 6,
+      "title": "Fallout - Polarizado",
+      "category": "combos",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
+      "image": "../assets/console.png",
+      "price": 500,
+      "cant": 50
+    },
+    {
+      "id": 7,
+      "title": "S.T.A.L.K.E.R - Polarizado",
       "category": "combos",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
       "image": "../assets/console.png",

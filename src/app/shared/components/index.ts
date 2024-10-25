@@ -14,11 +14,15 @@ import { QuestionComponent } from './question/question.component';
 import { ModalComponent } from './button/modal/modal.component';
 import { LoaderComponent } from './loader/loader.component';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { BuscadorComponent } from './buscador/buscador.component';
+import { FilterPipe } from 'app/pipes/filter.pipe';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 
 export const components: any[] = [
     TituloComponent,
     TituloH2Component,
     CardComponent,
+    BuscadorComponent,
     CardListComponent,
     CardViewListaComponent,
     BadgeTazasComponent,
@@ -30,7 +34,8 @@ export const components: any[] = [
     ModalComponent,
     LoaderComponent,
     CategoriasComponent,
-    CardNewsComponent
+    FilterPipe,
+    BreadcrumbComponent
 ];
 
 //export all componentes
@@ -49,4 +54,6 @@ export * from './question/question.component';
 export * from './categorias/categorias.component';
 export * from './cards/card-news/card-news.component'
 export * from './carrousel/carrousel.component';
+export * from './buscador/buscador.component';
 export * from './pagination/pagination.component';
+export * from './breadcrumb/breadcrumb.component';

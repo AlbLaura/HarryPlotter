@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="ubicacion">Inserte url aqui / / / sssss</div>
+    <app-breadcrumb [titulo]="currentProduct?.title"></app-breadcrumb>
 
     <section class="mt-3 mb-3 row animate-bottom" *ngIf="currentProduct; else loaderComponent;">
         <img class="imagen img-thumbnail col-6" src="{{currentProduct.image}}" alt="Imagen de la noticia">

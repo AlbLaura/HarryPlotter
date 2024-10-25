@@ -14,7 +14,6 @@ import { CategoriesComponent } from '@modules/categories/categories.component';
 import { NewsDetailComponent } from '@modules/news-detail/news-detail.component';
 import { ProductDetailComponent } from '@modules/product-detail/product-detail.component';
 
-import { SharedModule } from '@shared/shared.module';
 import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { SkeletonComponent } from '@layout/skeleton/skeleton.component';
 import { HeaderComponent } from '@layout/header/header.component';
@@ -22,6 +21,7 @@ import { FooterComponent } from '@layout/footer/footer.component';
 import { NavigationComponent } from '@layout/navigation/navigation.component';
 import { FormContactComponent } from './modules/form-contact/form-contact.component';
 import { NewsComponent } from './modules/news/news.component';
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -38,8 +38,8 @@ import { NewsComponent } from './modules/news/news.component';
     NewsDetailComponent,
     ProductDetailComponent,
     FormContactComponent,
-    NewsComponent,
-  ],
+    NewsComponent
+],
   imports: [
     BrowserModule,
     FormsModule,
@@ -47,7 +47,7 @@ import { NewsComponent } from './modules/news/news.component';
     CoreModule,
     SharedModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
     {

@@ -8,19 +8,12 @@ nav {
 ul {
     gap: 50px;
 }
-input:focus {
-    box-shadow: 0px 0px 3px 3px var(--colorSecundario);
-    border: 1px solid var(--colorPrincipal);
-}
 
 #logo h1{
     font-family: 'Berkshire Swash', cursive;
     color: #000;
 }
 
-.form-inline {
-    gap: 20px;
-}
 .nav-link {
     color: #000;
 }

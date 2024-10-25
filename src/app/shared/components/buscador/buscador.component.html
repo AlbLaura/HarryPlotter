@@ -1,0 +1,52 @@
+<form #formBuscador="ngForm" class="form-inline dropdown" action="#">
+    <!-- Campo de busqueda -->
+    <input 
+        class="form-control dropdown-toggle" 
+        type="text" 
+        placeholder="Buscar..." 
+        data-toggle="dropdown" 
+        id="buscador"  
+        name="filterProducto" 
+        [(ngModel)]="filterProducto"
+    >
+    <!-- Dropdown con los resultados -->
+    <div 
+        class="dropdown-menu" 
+        id="listaBuscador" 
+        *ngIf="ICardProductos && filterProducto" 
+        [class.show]="filterProducto.length > 0"
+    >
+        <!-- Evento (click) que redirige al detalle del producto y reseta su busqueda -->
+        <a 
+            class="dropdown-item" 
+            routerLink="/home/producto-detalle/{{producto.id}}" 
+            routerLinkActive="active" 
+            ariaCurrentWhenActive="page" 
+            *ngFor="let producto of ICardProductos | filterBusqueda:filterProducto | slice:0:5"
+            (click) = "onSelectProduct(producto)"
+        >
+            <div class="item-producto row">
+                <div class="col-4">
+                    <img src="{{producto.img}}" alt="">
+                </div>
+                <div class="col-8" >
+                    <h6>{{producto.title}}</h6>
+                    <span>{{producto.cant}} Disponibles</span>
+                    <span class="text-muted" *ngIf="!producto.cant">Sin Stock</span>
+                </div>
+            </div>
+        </a>
+        <div class="dropdown-divider"></div>
+        <a 
+            class="dropdown-item-text" 
+            routerLink="/categorias" 
+            routerLinkActive="active" 
+            ariaCurrentWhenActive="page"
+        >Ver más productos...</a>
+    </div>
+    <!-- Boton de submit -->
+    <button title="submit" class="btn btn-danger" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</form>
+
