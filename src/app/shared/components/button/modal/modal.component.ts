@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class ModalComponent {
   @Input() type: 'add' | 'cancel' | 'edit' = 'add';
-  @Input() crud: string = 'Agregar';
-  @Input() modalTitle: string = 'Titulo del Modal';
+  @Input() crud = 'Agregar';
+  @Input() modalTitle = 'Titulo del Modal';
 }

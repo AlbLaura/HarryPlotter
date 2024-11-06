@@ -8,7 +8,7 @@ import { filter } from 'rxjs/operators';
   styleUrl: './breadcrumb.component.css'
 })
 export class BreadcrumbComponent implements OnInit{
-  breadcrumbs: Array<string> = [];
+  breadcrumbs: string[] = [];
 
   constructor (
     private router: Router,
@@ -22,7 +22,7 @@ export class BreadcrumbComponent implements OnInit{
           this.breadcrumbs = this.buildBreadcrumb(this.activatedRoute.root);
         })
   }
-  buildBreadcrumb(route: ActivatedRoute, url: string = '', breadcrumbs: Array<string> = []): Array<string> {
+  buildBreadcrumb(route: ActivatedRoute, url = '', breadcrumbs: string[] = []): string[] {
     const children: ActivatedRoute[] =  route.children;
 
     if (children.length === 0) {

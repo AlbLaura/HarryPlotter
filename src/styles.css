@@ -6,7 +6,7 @@
     --colorBG: #FFFFFF; /*White*/
     --colorBGSoft: #F5F5F5; 
     --colorExtra: #5CE1E6; /*Electric blue*/
-    --fontFamily: 'Montserrat', sans-serif;
+    --fontFamily: 'Montserrat', Roboto, sans-serif;
 }
 /*----------------------------------------------------------------*/
 * {
@@ -16,9 +16,12 @@ app-modal {
     display: show;
 }
 html {
+    height: 100%;
     scroll-behavior: smooth;
 }
 body {
+    height: 100%;
+    margin: 0;
     background-color: var(--colorBGSoft);
 }
 a {

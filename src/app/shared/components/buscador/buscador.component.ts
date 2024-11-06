@@ -10,7 +10,7 @@ import { CardService } from '@data/services/api/card.service';
 export class BuscadorComponent {
   public ICardProductos: ICard[] | null = null;
 
-  public filterProducto: string = ''; // Campo de Búsqueda
+  public filterProducto = ''; // Campo de Búsqueda
 
   constructor (private CardService: CardService) {
     this.CardService.getAllProductos().subscribe(r => {
