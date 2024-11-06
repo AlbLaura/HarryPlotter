@@ -1,7 +1,13 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/home">Home</a></li>
-        <li class="breadcrumb-item"><a href="/categorias">Categorias</a></li>
-        <li class="breadcrumb-item active" aria-current="page">{{titulo}}</li>
+        <li 
+        class="breadcrumb-item"
+        *ngFor="let breadcrumb of breadcrumbs; let i = index">
+            <a 
+            *ngIf="i < breadcrumbs.lenght - 1" [routerLink]="['/' + breadcrumbs.slice(0, i + 1).join('/')]">
+                {{ breadcrumb }}
+            </a>
+            <span *ngIf="i === breadcrumbs.lenght - 1">{{ breadcrumb }}</span>
+        </li>
     </ol>
 </nav>

@@ -1,5 +1,5 @@
 <div class="container">
-    <app-breadcrumb [titulo]="currentProduct?.title"></app-breadcrumb>
+    <app-breadcrumb></app-breadcrumb>
 
     <section class="mt-3 mb-3 row animate-bottom" *ngIf="currentProduct; else loaderComponent;">
         <img class="imagen img-thumbnail col-6" src="{{currentProduct.image}}" alt="Imagen de la noticia">
@@ -26,10 +26,7 @@
         <h2 class="titulo-un text-center">Ultimos Productos</h2>
         <hr>
         <div class="row">
-            <div class="col-3"><app-card></app-card></div>
-            <div class="col-3"><app-card></app-card></div>
-            <div class="col-3"><app-card></app-card></div>
-            <div class="col-3"><app-card></app-card></div>
+            <!-- TODO: Falta crear el componente para las noticias o personalizar mejor el de las cards de productos -->
         </div>
     </section>
 </div>
