@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ICard } from './icard.metadata';
+import { ICard } from '../../../interfaces/icard.metadata';
 
 @Component({
   selector: 'app-card',
@@ -9,5 +9,10 @@ import { ICard } from './icard.metadata';
 export class CardComponent {
 
   @Input() data!: ICard;
+  @Input() datadb: 'producto-detalle' | 'anuncios-detalle' = 'producto-detalle';
 
+  constructor() {
+    let prueba = this.datadb;
+    console.log(prueba)
+  }
 }

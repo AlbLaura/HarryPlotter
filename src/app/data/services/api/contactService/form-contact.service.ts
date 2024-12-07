@@ -1,5 +1,7 @@
+// ? Servicio para el formulario de contacto que esta ubicado en el footer
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ApiClass } from '@data/schema/ApiClass.class';
 import { Observable } from 'rxjs';
 
 export interface Contact {
@@ -10,12 +12,14 @@ export interface Contact {
 @Injectable({
   providedIn: 'root'
 })
-export class FormContactService{
-  private apiURL = 'http://localhost:3000/contacto_usuario';
+export class FormContactService extends ApiClass {
+  private apiURL = this.url + 'contacto_usuario';
 
-  constructor(private http: HttpClient) {}
-
-  //Metodo que recibe la data del formulario y lo muestra en la consola
+  /**
+   * 
+   * @param contact Recibe la información enviada por el formulario
+   * @returns Lo guarda en la columna "contacto_usuario" de la base de datos
+   */
   submitApplication(contact: Contact): Observable<Contact>{
     return this.http.post<Contact>(this.apiURL, contact);
   };

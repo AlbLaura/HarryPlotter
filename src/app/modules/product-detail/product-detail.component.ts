@@ -1,18 +1,21 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, input, OnInit, output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CardService } from '@data/services/api/card.service';
+import { CardService } from '@data/services/api/cardService/card.service';
 import { CartService } from '@data/services/api/cartService/cart.service';
-import { ICard } from '@shared/components/cards/card/icard.metadata';
+import { ICard } from '@components/interfaces/icard.metadata';
 
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css']
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit{
+  
   public id: number;
   public currentProduct: ICard | null = null;
+  addProduct = input.required<ICard>();
+  addToCart = output<ICard>();
 
   constructor(
     private scroll: ViewportScroller,
@@ -30,6 +33,7 @@ export class ProductDetailComponent implements OnInit {
 
     this.cardService.getProductosById(this.id).subscribe(r => {
       if (!r.error) {
+
         this.currentProduct = r.data;
       } else {
         //manejamos el error aca
@@ -40,8 +44,11 @@ export class ProductDetailComponent implements OnInit {
   }
 
   //Evento que agrega un producto (data) al carrito y muestra un mensaje de aviso
-  addToCart(data:ICard) {
-    this.cartService.addToCart(data);
+  add(event: Event) {
+    event.stopPropagation
+    event.preventDefault()
+    this.addToCart.emit(this.addProduct());
+    //this.cartService.addToCart(data);
     window.alert('El producto ha sido agregado al carrito!');
   };
 }

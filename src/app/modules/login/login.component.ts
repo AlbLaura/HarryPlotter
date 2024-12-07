@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
+  
+  
+
   constructor (private viewportScroller: ViewportScroller) {}
+
   ngOnInit() {
     this.viewportScroller.scrollToPosition([0,0]);
   }

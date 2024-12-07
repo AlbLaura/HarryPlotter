@@ -1,18 +1,20 @@
-<!-- Info: Carrito con lista de productos que encargó el cliente. Puede eliminar o agregar productos, elegir si paga en efectivo o por mercado pago y si quiere descargar un pdf con la información -->
+<!-- ? Carrito con lista de productos. Se puede eliminar o agregar productos, elegir si paga en efectivo o por mercado pago y si quiere descargar un pdf con la información -->
+ 
 <section class="container">
-    <!-- Aviso para cuando el usuario NO ha iniciado sesión ngIf="isNotLogged" -->
+    <!-- * Aviso para cuando el usuario NO ha iniciado sesión: ngIf="isNotLogged" -->
     <!-- <div class="card-inicio text-center"> 
         <app-titulo texto="Ups... No tienes productos en la lista"></app-titulo>
         <p>Inicia sesión para poder registrar los productos que quieres comprar, gracias!</p>
     </div> -->
+
     <!-- Lista de productos para comprar (Solo se ve si el usuario inició sesión = ngIf="isLogged") -->
     <div class="card"> 
         <form action="#">
             <h2 class="titulo">Lista de productos</h2>
-            <div class="lista-productos" *ngFor="let item of items">
+            <!-- <div class="lista-productos" *ngFor="let item of items">
                 <span>{{ item.title }}</span>
                 <span>{{ item.price }}</span>
-            </div>
+            </div> -->
             <hr>
             <div class="total row">
                 <div class="col-10">
@@ -48,9 +50,11 @@
             </div>
             <hr>
             <div class="form-group buttons">
-                <!-- *Todo: Buscar como descargar un pdf con la info mostrada -->
+                <!-- TODO: Buscar como descargar un pdf con la info mostrada 
+                TODO: investigar si MP pide los datos del cliente antes o no -->
                 <button class="btn btn-outline-info" type="button" btn-pdf>Descargar PDF</button>
-                <!-- Continua dependiendo de los checks anteriores. En efectivo => formulario | mercado pago => api de mercado pago (investigar si mp pide los datos del cliente antes o no)-->
+                
+                <!-- * Continua dependiendo de los checks anteriores. En efectivo => formulario | mercado pago => api de mercado pago -->
                 <button class="btn btn-outline-danger" type="submit" btn-shop><a routerLink="/carrito/formulario" routerLinkActive="active" ariaCurrentWhenActive="page">Continuar compra</a></button>
             </div>
         </form>

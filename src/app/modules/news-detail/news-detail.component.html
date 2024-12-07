@@ -1,17 +1,30 @@
 <div class="container">
-    <app-breadcrumb></app-breadcrumb>
+  <app-breadcrumb></app-breadcrumb>
+
+  @if (currentAnuncio) {
     <section class="mt-3 d-flex flex-column">
-        <h1 class="titulo">Nombre de la noticia</h1>
-        <span class="mb-3">Autor de la noticia - Empresa - Fecha publicada</span>
-        <img class="imagen img-thumbnail mb-3" src="../../assets/console.png" alt="Imagen de la noticia">
-        <span class="mb-3">Descripcion de la imagen o su lugar de origen/autor/etc</span>
-        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, expedita iste? Qui distinctio aut odio modi excepturi placeat suscipit recusandae beatae. Aliquid dolor voluptas recusandae consequuntur quod fuga ut. Eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab porro ut corporis architecto, autem quae sit unde nisi voluptatem recusandae placeat hic culpa quod soluta ad id eum earum voluptas.</p>
+      <h1 class="titulo">{{currentAnuncio.title}}</h1>
+      <span class="mb-3">Autor: {{currentAnuncio.autor}} - Fecha de publicación: {{currentAnuncio.fecha}}</span>
+      <img
+        class="imagen img-thumbnail mb-3"
+        src="{{currentAnuncio.image}}"
+        alt="{{currentAnuncio.altImage}}"
+      />
+      <span class="mb-3"
+        >Descripcion de la imagen: {{currentAnuncio.altImage}}</span
+      >
+      <p class="descripcion">
+        {{currentAnuncio.description}}
+      </p>
     </section>
-    <section class="ultimas-noticias mb-4">
-        <h2 class="titulo-un text-center">Ultimas noticias</h2>
-        <hr>
-        <div class="row">
-            
-        </div>
-    </section>
+    <aside class="ultimas-noticias mb-4">
+      <h2 class="titulo-un text-center">Ultimas noticias</h2>
+      <hr />
+      <div class="row">
+        <!-- listado de ultimas noticias -->
+      </div>
+    </aside>
+  } @else {
+    loaderComponent;
+  }
 </div>

@@ -1,15 +1,14 @@
+// Servicio para traer un listado de todos los productos/noticias o por ID
 import { Injectable } from '@angular/core';
+import { ICard, News } from '@components/interfaces/icard.metadata';
 import { ApiClass } from '@data/schema/ApiClass.class';
-import { ICard } from '@shared/components/cards/card/icard.metadata';
-import { Observable, catchError, map, of } from 'rxjs';
+import { catchError, map, Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-
 export class CardService extends ApiClass{
-
-  /* Llamadas para la card de productos */
+/* Llamadas para la card de productos */
 
   /**
   * Trae toda la lista de productos registrados
@@ -102,10 +101,10 @@ export class CardService extends ApiClass{
     getNoticiasById(id: number): Observable<{
       error: boolean,
       msg: string,
-      data: ICard[] | null
+      data: News | null
     }> {
 
-      return this.http.get<ICard[]>(this.url + 'news/' + id)
+      return this.http.get<News>(this.url + 'news/' + id)
       .pipe(
         map(r => ({
           error: false,

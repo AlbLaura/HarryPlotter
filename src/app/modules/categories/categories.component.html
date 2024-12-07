@@ -1,29 +1,33 @@
-<div class="container-fluid row">
-    <div class="col-2">
+<section class="container-fluid row">
+    <!-- Seccion de categorias disponibles, con indicadores de cantidad de productos -->
+    <!-- <article class="col-2">
         <app-categorias></app-categorias>
-    </div>
-    <div class="col-10">
-        <div class="row">
+    </article> -->
+    <section class="col-1">
+        <aside class="row d-flex align-items-center info">
             <h2>Todos los productos</h2>
-            <!-- <app-modal type="add" crud="Agregar" modalTitle="Agregar Producto Nuevo">
-                <p>Producto aqui</p>
-            </app-modal>
-            <app-modal type="edit" crud="Editar" modalTitle="Editar Productos">
-                <p>Producto aqui</p>
-            </app-modal>
-            <app-modal type="cancel" crud="Eliminar" modalTitle="Cual Producto Deseas Eliminar?">
-                <p>Producto aqui</p>
-            </app-modal> -->
-            <i class="fa-solid fa-bars fa-2xl"></i>
-        </div>
-        <div class="row mb-3">
+            <!-- !Botones de modal - Solo cuando se inicia como Administrador, no usable para usuarios -->
+            <!-- <div class="modal-crud">
+                <app-modal type="add" crud="Agregar" modalTitle="Agregar Producto Nuevo">
+                    <p>Producto aqui</p>
+                </app-modal>
+                <app-modal type="edit" crud="Editar" modalTitle="Editar Productos">
+                    <p>Producto aqui</p>
+                </app-modal>
+                <app-modal type="cancel" crud="Eliminar" modalTitle="Cual Producto Deseas Eliminar?">
+                    <p>Producto aqui</p>
+                </app-modal>
+            </div> -->
+            <i class="fa-solid fa-bars fa-2xl ml-auto"></i> <!-- TODO: Aun no esta hecha la logica para que cambie entre vista de viñeta/lista -->
+        </aside>
+        <div class="row pt-3 mb-3">
             <app-breadcrumb section = "Categorias"></app-breadcrumb>
             <app-card-list></app-card-list>
         </div>
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <!-- <app-pagination></app-pagination> -->
+                <!-- <app-pagination></app-pagination> --> <!-- TODO: La paginacion aun no tiene la logica terminada -->
             </div>
         </div>
-    </div>
-</div>
+    </section>
+</section>

@@ -9,7 +9,7 @@
         </div>
         <div class="card-items d-flex justify-content-between">
             <span class="precio" *ngIf="data.price">$ {{data.price}}</span>
-            <app-button colorButton="danger" routerLink="/home/producto-detalle/{{data.id}}" routerLinkActive="active" ariaActive="page" textButton="Ver Info"></app-button>
+            <app-button colorButton="danger" routerLink="/home/{{datadb}}/{{data.id}}" routerLinkActive="active" ariaActive="page" textButton="Ver Info"></app-button>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CardService } from '@data/services/api/card.service';
-import { ICard } from '../card/icard.metadata';
+import { CardService } from '@data/services/api/cardService/card.service';
+import { ICard } from '../../../interfaces/icard.metadata';
 
 @Component({
   selector: 'app-card-news',

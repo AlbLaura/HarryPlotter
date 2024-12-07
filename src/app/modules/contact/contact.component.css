@@ -13,7 +13,7 @@ i{
 }
 #textoQSomos {
     background-color: var(--colorBG);
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 1px solid var(--colorPrincipal);
     border-radius: 10px;
     padding: 30px;

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IButton } from './ibutton.metadata';
+import { IButton } from '../../interfaces/ibutton.metadata';
 
 @Component({
   selector: 'app-button',

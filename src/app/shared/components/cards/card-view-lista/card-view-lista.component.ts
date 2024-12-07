@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ICard } from '../card/icard.metadata';
+import { ICard } from '../../../interfaces/icard.metadata';
 
 @Component({
   selector: 'app-card-view-lista',

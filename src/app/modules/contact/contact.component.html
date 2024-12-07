@@ -2,8 +2,19 @@
     <div class="row">
         <div class="col titulo d-flex justify-content-center">
             <h2>¿Quienes Somos?</h2>
-            <app-modal type="add" crud="Agregar"></app-modal>
-            <app-modal type="edit" crud="Editar"></app-modal>
+            <!-- !Botones de modal - Solo cuando se inicia como Administrador -->
+             <!-- ?Contiene para configurar la descripción y preguntas frecuentes -->
+            <!-- <div class="modal-crud">
+                <app-modal type="add" crud="Agregar" modalTitle="Agregar Información Nueva">
+                    <p>Información aqui</p>
+                </app-modal>
+                <app-modal type="edit" crud="Editar" modalTitle="Editar Información">
+                    <p>Información aqui</p>
+                </app-modal>
+                <app-modal type="cancel" crud="Eliminar" modalTitle="Cual Información Deseas Eliminar?">
+                    <p>Información aqui</p>
+                </app-modal>
+            </div> -->
         </div>
     </div>
     <div class="row">
@@ -14,15 +25,11 @@
     <div class="row">
         <div class="col titulo d-flex justify-content-center">
             <h2>Preguntas Frecuentes</h2>
-            <app-modal type="add" crud="Agregar"></app-modal>
-            <app-modal type="edit" crud="Editar"></app-modal>
         </div>
     </div>
     <div class="row mb-5"> <!-- aplica un for -->
         <div class="col">
-            <!-- TODO: error con el servicio de preguntas, investigar bien-->
-
-            <!-- <app-question [data]="pregunta" *ngFor="let pregunta of preguntas" ></app-question> -->
+            <app-question></app-question>
         </div>
     </div>
 </div>

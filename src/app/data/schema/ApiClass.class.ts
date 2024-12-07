@@ -1,23 +1,22 @@
-// Es una clase generica para extender desde los servicios, nos ayuda a ejecutar nuestros metodos
+// ? Es una clase generica para extender desde los servicios, nos ayuda a ejecutar nuestros metodos. Es el servicio general de la aplicación
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'environments/environment';
 import { of } from 'rxjs';
 
-// Servicio general de la aplicación
 @Injectable({
     providedIn: 'root'
 })
 
 export class ApiClass {
-    public url = environment.url;
-    public isProduction = environment.production;
+    public url = environment.url; //URL del backend
+    public isProduction = environment.production; //contiene si el proyecto esta en desarrollo o producción (desarrollo)
 
     constructor (
-        protected http: HttpClient
+        protected http: HttpClient //Con HttpClient manejas los estados base como get, put, post y delete
     ) { }
 
-    //informa si hay algun error en la plataforma
+    //? informa si hay algun error de estatus en la plataforma, devuelve el codigo de error
 
     error(error: HttpErrorResponse) {
         let errorMessage = '';

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { IQuestion } from './iquestion.metadata';
+import { IQuestion } from '../../interfaces/iquestion.metadata';
+import { PreguntasService } from '@data/services/api/preguntaService/preguntas.service';
 
 @Component({
   selector: 'app-question',
@@ -7,6 +8,17 @@ import { IQuestion } from './iquestion.metadata';
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent {
-  @Input() data!: IQuestion;
+  public dataPreguntas: IQuestion[] | null = null;
+
+  constructor ( private preguntaService: PreguntasService ) {
+    this.preguntaService.getAllPreguntas().subscribe( r => {
+      if(!r.error) {
+        this.dataPreguntas = r.data;
+        console.log(r.data);
+      } else {
+        console.error('Error al obtener el listado:', r.error);
+      }
+    });
+  }
   
 }

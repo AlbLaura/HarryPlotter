@@ -1,56 +1,53 @@
+<!-- ? Formulario de login y registro -->
 <section class="container">
     <div class="card">
         <div class="header-form">
             <!-- --active varia segun el click del usuario -->
-            <div class="card-header--active col-6" id="ingreso">Ingreso</div>
-            <div class="card-header col-6" id="registrarse" onclick="mostrarCard">Registrarse</div>
+            <button class="card-header--active col-6" id="ingreso">Ingreso</button>
+            <button class="card-header col-6" id="registrarse">Registrarse</button>
         </div>
         <!-- card para iniciar sesion -->
-        <!-- <div class="card-body"> 
-            <form action="#" data-form>
-                <div class="form-group">
-                    <label for="usuario">Usuario</label>
-                    <input class="form-control" type="text" placeholder="alb_laura" data-user>
-                </div>
-                <div class="form-group">
-                    <label for="psw">Contraseña</label>
-                    <input class="form-control" type="password" placeholder="********" data-pwd> 
-                </div>
-                <div class="form-buttons">
-                    <button type="button" class="btn btn-primary" data-back>Volver</button>
-                    <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
-                </div>
-            </form>
-            <div class="card-info">
-                <a href="#">¿Olvidaste tu contraseña?</a>
-                <a href="#">¿Olvidaste tu usuario?</a>
-                <a href="#">Inicia Sesion con una Red Social</a>
+        <form action="#" data-form class="card-body" hidden>
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input class="form-control" type="text" placeholder="alb_laura" data-user>
             </div>
-        </div> -->
+            <div class="form-group">
+                <label for="psw">Contraseña</label>
+                <input class="form-control" type="password" placeholder="********" data-pwd> 
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="btn btn-primary" data-back>Volver</button>
+                <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
+            </div>
+        </form>
+        <section class="card-info" hidden>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="#">¿Olvidaste tu usuario?</a>
+            <a href="#">Inicia Sesion con una Red Social</a>
+        </section>
         <!-- card para registrarse -->
-        <div class="card-body"> 
-            <form action="#" data-form>
-                <div class="form-group">
-                    <label for="usuario">Nombre completo</label>
-                    <input class="form-control" type="text" placeholder="Laura Albornoz" data-name>
-                </div>
-                <div class="form-group">
-                    <label for="usuario">Usuario</label>
-                    <input class="form-control" type="text" placeholder="alb_laura" data-user>
-                </div>
-                <div class="form-group">
-                    <label for="psw">Email</label>
-                    <input class="form-control" type="password" placeholder="emailprueba@gmail.com" data-email>
-                </div>
-                <div class="form-group">
-                    <label for="psw">Contraseña</label>
-                    <input class="form-control" type="password" placeholder="********" data-pwd> 
-                </div>
-                <div class="form-buttons">
-                    <button type="button" class="btn btn-primary" data-back>Volver</button>
-                    <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
-                </div>
-            </form>
-        </div>
+        <form action="#" data-form class="card-body">
+            <div class="form-group">
+                <label for="usuario">Nombre completo</label>
+                <input class="form-control" type="text" placeholder="Laura Albornoz" data-name>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Usuario</label>
+                <input class="form-control" type="text" placeholder="alb_laura" data-user>
+            </div>
+            <div class="form-group">
+                <label for="psw">Email</label>
+                <input class="form-control" type="password" placeholder="emailprueba@gmail.com" data-email>
+            </div>
+            <div class="form-group">
+                <label for="psw">Contraseña</label>
+                <input class="form-control" type="password" placeholder="********" data-pwd> 
+            </div>
+            <div class="form-buttons">
+                <button type="button" class="btn btn-primary" data-back>Volver</button>
+                <button type="submit" class="btn btn-danger" data-login>Iniciar Sesion</button>
+            </div>
+        </form>
     </div>
 </section>

@@ -1,26 +1,33 @@
 <section class="row d-flex justify-content-around">
+    <!-- Logo de la empresa -->
     <div id="logo" class="col-3 d-flex flex-column align-content-center justify-content-center">
         <img src="../../../assets/logo_harry-plotter.svg" alt="Logo de Harry Plotter" class="logo-empresa">
         <h1 class="text-center">Harry Plotter</h1>
-        
     </div>
+
+    <!-- Listado con secciones importantes -->
     <div class="col-2 d-flex flex-column align-content-center justify-content-center menu">
         <ul class="navbar-nav">
-            <li><app-titulo-h2 texto="Categorias" type="white"></app-titulo-h2></li>
-            <li class="nav-item"><a routerLink="/categorias-component" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Tazas</a></li>
-            <li class="nav-item"><a routerLink="/categorias-component" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Posters</a></li>
-            <li class="nav-item"><a routerLink="/categorias-component" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Stickers</a></li>
-            <li class="nav-item"><a routerLink="/categorias-component" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Almohadones</a></li>
+            <li><app-titulo-h2 texto="Contenido" type="white"></app-titulo-h2></li>
+            <li class="nav-item"><a routerLink="/categorias" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Categorias</a></li>
+            <li class="nav-item"><a routerLink="/anuncios" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Anuncios</a></li>
+            <li class="nav-item"><a routerLink="/contacto" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Quienes somos</a></li>
+            <li class="nav-item"><a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class="nav-link">Perfil</a></li>
         </ul>
     </div>
+
+    <!-- Formulario de contacto -->
     <address class="col-5 mt-4">
         <app-form-contact></app-form-contact>
     </address>
 </section>
+
+<!-- Frase requerida por el cliente -->
 <section class="row text-center">
     <span class="col-12 frase">" Scooby Doo me habla de tu y Jimmy Carter tiene caracter "</span>
 </section>
+
+<!-- Fecha y nombre de la empresa -->
 <div class="row text-center author">
     <span class="col">{{anio}} - HarryPlotter</span>
-    
 </div>

@@ -1,3 +1,4 @@
+/*no deja que el usuario modifique el tamaño del input*/
 textarea{
     resize: none;
 }

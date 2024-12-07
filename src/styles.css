@@ -1,11 +1,11 @@
 :root {
-    --colorPrincipal: #C61E00; /*Sinopia*/
-    --color-hover: #B21B00;
+    --colorPrincipal: #ad1a00; 
+    --color-hover: #8f1500;
     --color-border: #ff4646;
-    --colorSecundario: #FF7D66; /*Salmon*/
-    --colorBG: #FFFFFF; /*White*/
+    --colorSecundario: #FF7D66;
+    --colorBG: #FFFFFF;
     --colorBGSoft: #F5F5F5; 
-    --colorExtra: #5CE1E6; /*Electric blue*/
+    --colorExtra: #5CE1E6;
     --fontFamily: 'Montserrat', Roboto, sans-serif;
 }
 /*----------------------------------------------------------------*/
@@ -29,9 +29,6 @@ a {
 }
 a:hover {
     color: var(--colorPrincipal);
-}
-i {
-    background: none;
 }
 input {
     padding: 20px 20px;

@@ -1,7 +1,8 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { CardService } from '@data/services/api/card.service';
-import { ICard } from '@shared/components/cards/card/icard.metadata';
+import { ActivatedRoute } from '@angular/router';
+import { CardService } from '@data/services/api/cardService/card.service';
+import { News } from '@components/interfaces/icard.metadata';
 
 @Component({
   selector: 'app-news-detail',
@@ -10,21 +11,31 @@ import { ICard } from '@shared/components/cards/card/icard.metadata';
 })
 export class NewsDetailComponent implements OnInit{
 
-  public ICardAnuncios: ICard[] | null = null;
+  public id: number;
+  public currentAnuncio: News | null = null;
 
-  constructor ( private CardService: CardService, 
-    private viewportScroller: ViewportScroller ) {
-      this.CardService.getAllNoticias().subscribe( r => {
-        if(!r.error) {
-          this.ICardAnuncios = r.data;
-        } else {
-          console.error('Error al obtener el listado de noticias', r.error);
-        }
-    })
-  }
+  constructor ( 
+    private scroll: ViewportScroller,
+    private route: ActivatedRoute,
+    private cardService: CardService
+  ) { this.id = +this.route.snapshot.params["id"]; }
 
-  ngOnInit() {
-    this.viewportScroller.scrollToPosition([0,0]);
-  }
+  ngOnInit(): void {
+
+    this.scroll.scrollToPosition([0, 0]);
+
+    this.cardService.getNoticiasById(this.id).subscribe(r => {
+      if (!r.error) {
+        this.currentAnuncio = r.data;
+        console.log(r.data);
+      } else {
+        //manejamos el error aca
+        console.log(r.data);
+        console.error('Error al obtener el producto:', r.msg);
+      };
+    });
+
+  };
+
 }
 

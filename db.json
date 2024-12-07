@@ -1,7 +1,7 @@
 {
   "category": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "tazas",
       "subcategory": [
         {
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "posters",
       "subcategory": [
         {
@@ -29,7 +29,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "almohadas",
       "subcategory": [
         {
@@ -47,7 +47,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "titulo": "stickers",
       "subcategory": [
         {
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "titulo": "combos",
       "subcategory": [
         {
@@ -77,7 +77,7 @@
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Pikachu",
       "category": "tazas",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
@@ -85,7 +85,7 @@
       "price": 500
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "The Witcher - Polarizado",
       "category": "posters",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
@@ -94,7 +94,7 @@
       "cant": 100
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Mario Bros - Polarizado",
       "category": "almohadas",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
@@ -103,7 +103,7 @@
       "cant": 10
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Valorant - Polarizado",
       "category": "stickers",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
@@ -112,7 +112,7 @@
       "cant": 30
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Padrinos Magicos - Polarizado",
       "category": "combos",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
@@ -121,7 +121,7 @@
       "cant": 50
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Fallout - Polarizado",
       "category": "combos",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
@@ -130,7 +130,7 @@
       "cant": 50
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "S.T.A.L.K.E.R - Polarizado",
       "category": "combos",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae qui, nisi illum beatae sequi eligendi vel officia tempora natus ipsam, voluptatem quaerat ex? Mollitia?",
@@ -141,7 +141,7 @@
   ],
   "productos_carrito": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Pikachu - Polarizado",
       "cant": 1,
       "price": 500,
@@ -150,22 +150,27 @@
   ],
   "news": [
     {
-      "id": 1,
-      "title": "Nueva noticia: Llegaron productos nuevos al local",
+      "id": "1",
+      "title": "Llegaron productos nuevos al local",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
-      "category": "holatest",
-      "image": "../assets/console.png"
+      "autor": "yo",
+      "image": "../assets/console.png",
+      "altImage": "test",
+      "fecha": "02/04/2024"
     },
     {
-      "id": 2,
-      "title": "Nueva noticia: Llegaron productos nuevos al local",
+      "id": "2",
+      "title": "Llegaron productos nuevos al local",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae nemo quisquam aliquid eum repudiandae",
-      "image": "../assets/console.png"
+      "image": "../assets/console.png",
+      "autor": "Adrian",
+      "altImage": "test",
+      "fecha": "10/07/2024"
     }
   ],
   "contacto_personal": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Adrian Ezequiel Lopez",
       "rol": "ADMIN",
       "redes": [
@@ -192,9 +197,9 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Laura Soledad Albornoz",
-      "rol": "DEV",
+      "rol": "ADMIN",
       "redes": [
         {
           "titulo": "GitHub",
@@ -203,25 +208,34 @@
         {
           "titulo": "Discord",
           "usuario": "alb_laura"
-        },
-        {
-          "titulo": "Twitter",
-          "usuario": "@Alb_Laura_"
         }
       ]
+    }
+  ],
+  "login_usuario": [
+    {
+      "id": "1",
+      "user": "test",
+      "pwd": "test",
+      "rol": "USER"
     }
   ],
   "contacto_usuario": [],
   "preguntas": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Donde puedo encontrarlos?",
       "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG"
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Donde puedo encontrarlos x2?",
       "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG. Holisss"
+    },
+    {
+      "id": "3",
+      "titulo": "Donde puedo encontrarlos x3?",
+      "respuesta": "De momento no tenemos disponible un local, asi que la unica forma de vernos personalmente es por medio de ferias o eventos. Tambien podemos organizar una reunion en el centro por medio de Whatsapp o IG"
     }
   ]
 }

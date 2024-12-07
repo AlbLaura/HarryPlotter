@@ -2,6 +2,7 @@ nav {
     height: 60px;
     background-color: var(--colorPrincipal);
     color: var(--colorBG);
+    
 }
 .nav-link {
     color: var(--colorBG);

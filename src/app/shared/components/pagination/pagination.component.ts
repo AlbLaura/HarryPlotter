@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
+import { MatPaginatorModule } from "@angular/material/paginator"
 
+/**
+ * @title Paginator 
+ */
 @Component({
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',

@@ -25,17 +25,19 @@
             *ngFor="let producto of ICardProductos | filterBusqueda:filterProducto | slice:0:5"
             (click) = "onSelectProduct(producto)"
         >
+        <!-- Informacion del producto: imagen y titulo | dependiendo de si hay stock aparece un texto informativo-->
             <div class="item-producto row">
                 <div class="col-4">
                     <img src="{{producto.img}}" alt="">
                 </div>
                 <div class="col-8" >
                     <h6>{{producto.title}}</h6>
-                    <span>{{producto.cant}} Disponibles</span>
-                    <span class="text-muted" *ngIf="!producto.cant">Sin Stock</span>
+                    <span *ngIf="producto.cant">{{producto.cant}} Disponibles</span>
+                    <span class="text-muted" *ngIf="producto.cant == 0 || producto.cant == null">Sin Stock</span>
                 </div>
             </div>
         </a>
+        <!-- Apartado de "ver mas productos" -->
         <div class="dropdown-divider"></div>
         <a 
             class="dropdown-item-text" 

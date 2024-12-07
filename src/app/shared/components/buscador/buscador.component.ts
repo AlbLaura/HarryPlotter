@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ICard } from '../cards/card/icard.metadata';
-import { CardService } from '@data/services/api/card.service';
+import { ICard } from '../../interfaces/icard.metadata';
+import { CardService } from '@data/services/api/cardService/card.service';
 
 @Component({
   selector: 'app-buscador',
@@ -16,7 +16,6 @@ export class BuscadorComponent {
     this.CardService.getAllProductos().subscribe(r => {
       if(!r.error) {
         this.ICardProductos = r.data;
-        console.log(this.ICardProductos);
       } else {
         console.error('Error al obtener el listado:', r.error);
       }

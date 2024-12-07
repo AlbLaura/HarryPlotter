@@ -7,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit{
-  //ngAfterViewChecked es un metodo de ciclo de vida que se ejecuta DESPUÉS de que se actualicen los cambios en el DOM
-  //ngOnInit se ejecuta una sola vez, cuando se inicializa el componente
+  // ? Cuando se inicia este componente, se reinicia la posicion a 0,0
   constructor (private viewportScroller: ViewportScroller) {}
   ngOnInit() {
     this.viewportScroller.scrollToPosition([0,0]);

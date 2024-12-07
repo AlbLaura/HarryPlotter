@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IBadges } from './ibadges.metadata';
+import { IBadges } from '../../../interfaces/ibadges.metadata';
 
 @Component({
   selector: 'app-badge-tazas',

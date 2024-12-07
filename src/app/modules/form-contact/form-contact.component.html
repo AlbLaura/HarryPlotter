@@ -1,37 +1,70 @@
-<!-- action => https://formspree.io/f/mayrqjeb ?? buscar que era esto -->
-<!-- *(submit)=" " -> Los parentesis son para eventos, el codigo dentro de el igual = "" es el que va a ser ejecutado cuando sea triggered -->
-<form [formGroup]="applyForm" (submit)="submitApplication()" action="#" method="POST" class="form-contacto" id="form-contacto">
+<!-- ! action="https://formspree.io/f/mayrqjeb" -> recibe la información del formulario fácilmente -->
+<!-- ? (submit)=" " -> Los parentesis son para eventos, el valor que reciba es el que va a ser ejecutado cuando sea triggered por el usuario
+? [formgroup] -> recibe los datos y los carga en el objeto creado como "applyForm"
+? la funcion submit valida los datos -->
 
-    <app-titulo texto="Contactame" type="white"></app-titulo>
+<form 
+    id="form-contacto"
+    action="/" 
+    method="POST" 
+    [formGroup]="applyForm" 
+    (submit)="submitApplication()" 
+    class="form-contacto" >
+    <fieldset> 
+        <legend>Contactame:</legend>
+        <!-- *cada @if valida si el input que tenga encima es invalido y "sucio" o seleccionado, devuelve un aviso de error-->
 
-    <!-- @if valida si el input es invalido y "sucio" o seleccionado y devuelve un aviso de error-->
+        <!-- Input para ingresar el nombre -->
+        <div class="form-group">
+            <label for="nombre" class="col">Nombre</label>
+            <input 
+                id="nombre" 
+                name="name"   
+                type="text" 
+                placeholder="Laura Albornoz" 
+                formControlName="name" 
+                class="col form-control"
+                required>
+            @if (applyForm.get('name')?.invalid && (applyForm.get('name')?.dirty || applyForm.get('name')?.touched)) {
+                <div class="error">El nombre es requerido</div>
+            }
+        </div>
 
-    <div class="form-group">
-        <label for="nombre" class="col">Nombre</label>
-        <input name="name" class="col form-control" id="nombre" type="text" placeholder="Laura Albornoz" formControlName="name" required>
-        @if (applyForm.get('name')?.invalid && (applyForm.get('name')?.dirty || applyForm.get('name')?.touched)) {
-            <div class="error">El nombre es requerido</div>
-        }
-    </div>
-    
-    <div class="form-group">
-        <label for="email" class="col">Email</label>
-        <input name="email" class="col form-control" id="email" type="email" placeholder="a.a@gmail.com" formControlName="email" required>
-        @if (applyForm.get('email')?.invalid && (applyForm.get('email')?.dirty || applyForm.get('email')?.touched)) {
-            <div class="error">Por favor, ingrese un email valido</div>
-        }
-    </div>
-    
-    <div class="form-group">
-        <label for="message" class="col">Mensaje</label>
-        <textarea name="message" class="col form-control" id="message" cols="30" rows="10" placeholder="Escribe tu mensaje..." formControlName="message" required></textarea>
-        @if (applyForm.get('message')?.invalid && (applyForm.get('message')?.dirty || applyForm.get('message')?.touched)) {
-            <div class="error">El mensaje es requerido</div>
-        }
-    </div>
-    
+        <!-- Input para ingresar el email -->
+        <div class="form-group">
+            <label for="email" class="col">Email</label>
+            <input 
+                id="email"
+                name="email" 
+                type="email" 
+                placeholder="a.a@gmail.com" 
+                formControlName="email" 
+                class="col form-control"
+                required>
+            @if (applyForm.get('email')?.invalid && (applyForm.get('email')?.dirty || applyForm.get('email')?.touched)) {
+                <div class="error">Por favor, ingrese un email valido</div>
+            }
+        </div>
+        
+        <!-- Input para ingresar el mensaje -->
+        <div class="form-group">
+            <label for="message" class="col">Mensaje</label>
+            <textarea 
+                id="message"
+                name="message" 
+                cols="30" 
+                rows="10" 
+                placeholder="Escribe tu mensaje..." 
+                formControlName="message" 
+                class="col form-control" 
+                required>
+            </textarea>
+            @if (applyForm.get('message')?.invalid && (applyForm.get('message')?.dirty || applyForm.get('message')?.touched)) {
+                <div class="error">El mensaje es requerido</div>
+            }
+        </div>
+    </fieldset>
+        
+    <!-- boton desactivado hasta que no se complete el formulario y este bien validado (no produzca ningun error) -->
     <button class="btn btn-light" type="submit" [disabled]="applyForm.invalid">Enviar mensaje</button>
-
 </form>
-
-<!-- {{ persona | json }} => al colocar | json al lado, la informacion que se muestra sera en formato json y no como objeto -->

@@ -1,10 +1,23 @@
-<!-- buscar despues en w3s "accordion" en la categoria de collapse -->
-<div class="question">
-    <div class="form-inline d-flex justify-content-between">
-        <h4 class="titulo">{{data.titulo}}</h4>
-        <button data-toggle="collapse" data-target="#answer" class="btn btn-light" title="Despliega para ver la respuesta"><i class="fa-solid fa-chevron-down"></i></button>
-    </div>
-    <div id="answer" class="collapse">
-        <p class="respuesta">{{data.respuesta}}</p>
+<div id="accordion">
+    <!-- bucle con preguntas frecuentes -->
+    <div class="card" *ngFor="let data of dataPreguntas;">
+        <!-- Titulo de la pregunta  -->
+        <div class="card-header">
+            <a 
+            class="card-link d-flex justify-content-between align-items-center"
+            data-toggle="collapse"
+            href="#pregunta-{{data.id}}">
+                {{data.titulo}}
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+        <!-- Respuesta a la pregunta -->
+        <div id="pregunta-{{data.id}}" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                <p class="card-text">
+                    {{data.respuesta}}
+                </p>
+            </div>
+        </div>
     </div>
 </div>
