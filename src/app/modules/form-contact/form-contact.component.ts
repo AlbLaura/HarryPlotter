@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Contact, FormContactService } from '@data/services/api/contactService/form-contact.service';
 @Component({
-  selector: 'app-form-contact',
-  templateUrl: './form-contact.component.html',
-  styleUrls: ['./form-contact.component.css']
+    selector: 'app-form-contact',
+    templateUrl: './form-contact.component.html',
+    styleUrls: ['./form-contact.component.css'],
+    standalone: true
 })
 export class FormContactComponent implements OnInit{
 

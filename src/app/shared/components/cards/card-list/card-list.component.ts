@@ -7,7 +7,8 @@ import { CardService } from '@data/services/api/cardService/card.service';
 @Component({
   selector: 'app-card-list',
   templateUrl: './card-list.component.html',
-  styleUrls: ['./card-list.component.css']
+  styleUrls: ['./card-list.component.css'],
+  standalone: true
 })
 
 export class CardListComponent{

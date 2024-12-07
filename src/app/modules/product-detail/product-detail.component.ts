@@ -6,9 +6,10 @@ import { CartService } from '@data/services/api/cartService/cart.service';
 import { ICard } from '@components/interfaces/icard.metadata';
 
 @Component({
-  selector: 'app-product-detail',
-  templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+    selector: 'app-product-detail',
+    templateUrl: './product-detail.component.html',
+    styleUrls: ['./product-detail.component.css'],
+    standalone: true
 })
 export class ProductDetailComponent implements OnInit{
   

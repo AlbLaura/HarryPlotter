@@ -5,9 +5,10 @@ import { CardService } from '@data/services/api/cardService/card.service';
 import { News } from '@components/interfaces/icard.metadata';
 
 @Component({
-  selector: 'app-news-detail',
-  templateUrl: './news-detail.component.html',
-  styleUrls: ['./news-detail.component.css']
+    selector: 'app-news-detail',
+    templateUrl: './news-detail.component.html',
+    styleUrls: ['./news-detail.component.css'],
+    standalone: true
 })
 export class NewsDetailComponent implements OnInit{
 

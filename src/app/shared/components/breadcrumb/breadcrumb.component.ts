@@ -5,7 +5,8 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-breadcrumb',
   templateUrl: './breadcrumb.component.html',
-  styleUrl: './breadcrumb.component.css'
+  styleUrl: './breadcrumb.component.css',
+  standalone: true
 })
 export class BreadcrumbComponent implements OnInit{
   breadcrumbs: string[] = [];

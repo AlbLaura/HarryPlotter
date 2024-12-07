@@ -8,8 +8,8 @@ describe('CardViewListaComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CardViewListaComponent]
-    });
+    imports: [CardViewListaComponent]
+});
     fixture = TestBed.createComponent(CardViewListaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

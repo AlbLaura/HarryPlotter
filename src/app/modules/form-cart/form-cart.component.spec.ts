@@ -8,8 +8,8 @@ describe('FormCartComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FormCartComponent]
-    });
+    imports: [FormCartComponent]
+});
     fixture = TestBed.createComponent(FormCartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

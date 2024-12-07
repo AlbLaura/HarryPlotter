@@ -8,8 +8,8 @@ describe('CarrouselComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CarrouselComponent]
-    });
+    imports: [CarrouselComponent]
+});
     fixture = TestBed.createComponent(CarrouselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

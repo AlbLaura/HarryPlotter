@@ -1,12 +1,15 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { QuestionComponent } from '@components/components/question/question.component';
 /* import { PreguntasService } from '@data/services/api/preguntaService/preguntas.service';
 import { IQuestion } from '@shared/components/question/iquestion.metadata'; */
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    imports: [QuestionComponent],
+    standalone: true
 })
 export class ContactComponent implements OnInit{
   /* public preguntas!: IQuestion[]; */

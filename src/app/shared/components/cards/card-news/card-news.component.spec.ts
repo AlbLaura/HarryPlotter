@@ -8,8 +8,8 @@ describe('CardNewsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CardNewsComponent]
-    });
+    imports: [CardNewsComponent]
+});
     fixture = TestBed.createComponent(CardNewsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

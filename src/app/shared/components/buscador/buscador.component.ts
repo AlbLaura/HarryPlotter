@@ -5,7 +5,8 @@ import { CardService } from '@data/services/api/cardService/card.service';
 @Component({
   selector: 'app-buscador',
   templateUrl: './buscador.component.html',
-  styleUrl: './buscador.component.css'
+  styleUrl: './buscador.component.css',
+  standalone: true
 })
 export class BuscadorComponent {
   public ICardProductos: ICard[] | null = null;

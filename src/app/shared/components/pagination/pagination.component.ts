@@ -7,7 +7,8 @@ import { MatPaginatorModule } from "@angular/material/paginator"
 @Component({
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
-  styleUrls: ['./pagination.component.css']
+  styleUrls: ['./pagination.component.css'],
+  standalone: true
 })
 export class PaginationComponent {
 // Hace falta implementar un service con el listado de productos total
