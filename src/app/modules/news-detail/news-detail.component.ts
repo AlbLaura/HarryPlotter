@@ -3,12 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CardService } from '@data/services/api/cardService/card.service';
 import { News } from '@components/interfaces/icard.metadata';
+import { BreadcrumbComponent } from '@components/components/breadcrumb/breadcrumb.component';
 
 @Component({
     selector: 'app-news-detail',
     templateUrl: './news-detail.component.html',
     styleUrls: ['./news-detail.component.css'],
-    standalone: true
+    standalone: true,
+    imports: [BreadcrumbComponent]
 })
 export class NewsDetailComponent implements OnInit{
 

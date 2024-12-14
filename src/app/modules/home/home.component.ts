@@ -8,7 +8,10 @@ import { ViewportScroller } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
   
-  constructor (private viewportScroller: ViewportScroller) {}
+  constructor (private viewportScroller: ViewportScroller) {
+    import('@components/components/carrousel/carrousel.component');
+    import('@components/components/cards/card-list/card-list.component');
+  }
 
   ngOnInit() {
     this.viewportScroller.scrollToPosition([0,0]);

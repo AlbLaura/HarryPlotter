@@ -4,12 +4,14 @@ import { ActivatedRoute } from '@angular/router';
 import { CardService } from '@data/services/api/cardService/card.service';
 import { CartService } from '@data/services/api/cartService/cart.service';
 import { ICard } from '@components/interfaces/icard.metadata';
+import { BreadcrumbComponent } from '@components/components/breadcrumb/breadcrumb.component';
 
 @Component({
     selector: 'app-product-detail',
     templateUrl: './product-detail.component.html',
     styleUrls: ['./product-detail.component.css'],
-    standalone: true
+    standalone: true,
+    imports: [BreadcrumbComponent]
 })
 export class ProductDetailComponent implements OnInit{
   

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { SharedModule } from '@shared/shared.module';
 import { HomeComponent } from '../home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { CardListComponent } from "../../shared/components/cards/card-list/card-list.component";
+import { CarrouselComponent } from "../../shared/components/carrousel/carrousel.component";
 
 
 
@@ -10,8 +11,9 @@ import { HomeRoutingModule } from './home-routing.module';
     HomeComponent
   ],
   imports: [
-    SharedModule,
-    HomeRoutingModule
-  ]
+    HomeRoutingModule,
+    CardListComponent,
+    CarrouselComponent
+]
 })
 export class HomeModule { }
