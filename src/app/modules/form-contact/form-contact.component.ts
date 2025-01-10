@@ -1,6 +1,6 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { AbstractControlOptions, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Contact, FormContactService } from '@data/services/api/contactService/form-contact.service';
 @Component({
     selector: 'app-form-contact',
@@ -13,19 +13,20 @@ export class FormContactComponent implements OnInit{
   constructor (
     private viewportScroller: ViewportScroller, 
     private formservice: FormContactService, 
-    private fb: AbstractControlOptions) {}
+    private fb: FormBuilder,
+    public applyForm: FormGroup) 
+  {}
 
   ngOnInit() {
     this.viewportScroller.scrollToPosition([0,0]);
+    //Creacion de un objeto para el formulario con sus validaciones
+    this.applyForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+    });
   }
 
-  //creacion de un objeto para el formulario con sus validaciones
-  applyForm = this.fb.group({
-    name: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
-    message: ['', Validators.required]
-  });
-  
   submitApplication() {
     if (this.applyForm.valid) {
       // Si el formulario es valido, carga los datos en la base de datos

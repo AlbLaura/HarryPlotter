@@ -1,11 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { IButton } from '../../interfaces/ibutton.metadata';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css'],
-  standalone: true
+  standalone: true,
+  imports: [RouterLink, RouterLinkActive]
 })
 export class ButtonComponent {
   @Input() routerLink!: IButton;

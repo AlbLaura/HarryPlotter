@@ -25,7 +25,9 @@
             },
             "index": "src/index.html",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "zone.js/testing", 
+              "@angular/localize/init" 
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [

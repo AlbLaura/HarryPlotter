@@ -1,12 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { ICard } from '../../interfaces/icard.metadata';
 import { CardService } from '@data/services/api/cardService/card.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-buscador',
   templateUrl: './buscador.component.html',
   styleUrl: './buscador.component.css',
-  standalone: true
+  standalone: true,
+  imports: [FormsModule]
 })
 export class BuscadorComponent {
   public ICardProductos: ICard[] | null = null;
