@@ -7,8 +7,8 @@
     id="form-contacto"
     action="/" 
     method="POST" 
-    formGroup="applyForm" 
-    (submit)="submitApplication()" 
+    [formGroup]="applyForm" 
+    (ngSubmit)="submitApplication()" 
     class="form-contacto" >
     <fieldset> 
         <legend>Contactame:</legend>

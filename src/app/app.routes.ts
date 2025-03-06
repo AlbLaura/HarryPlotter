@@ -1,8 +1,12 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { SkeletonComponent } from './layout/skeleton/skeleton.component';
+import { Routes } from '@angular/router';
+import { carritoRoutes } from '@modules/routing/carrito-routing.module';
+import { categoriasRoutes } from '@modules/routing/categories-routing.module';
+import { contactoRoutes } from '@modules/routing/contact-routing.module';
+import { homeRoutes } from '@modules/routing/home-routing.module';
+import { loginRoutes } from '@modules/routing/login-routing.module';
+import { anunciosRoutes } from '@modules/routing/news-routing.module';
 
-const routes: Routes = [
+export const appRoutes: Routes = [
   {
     path: '',
     redirectTo: '/home',
@@ -10,37 +14,31 @@ const routes: Routes = [
   },
   { 
     path: '',
-    component: SkeletonComponent,
+    loadComponent: () => import('@layout/skeleton/skeleton.component').then(m => m.SkeletonComponent),
     children: [
       {
         path: 'home',
-        loadChildren: () => 
-          import('@modules/routing/home.module').then( (m) => m.HomeModule)
+        children: homeRoutes
       },
       {
         path: 'categorias',
-        loadChildren: () =>
-          import('@modules/routing/categories.module').then( (m) => m.CategoriesModule)
+        children: categoriasRoutes
       },
       {
         path: 'contacto',
-        loadChildren: () =>
-          import('@modules/routing/contact.module').then( (m) => m.ContactModule)
+        children: contactoRoutes
       },
       {
         path: 'anuncios',
-        loadChildren: () =>
-          import('@modules/routing/news.module').then( (m) => m.NewsModule)
+        children: anunciosRoutes
       },
       {
         path: 'login',
-        loadChildren: () =>
-          import('@modules/routing/login.module').then( (m) => m.LoginModule)
+        children: loginRoutes
       },
       {
         path: 'carrito',
-        loadChildren: () =>
-          import('@modules/routing/carrito.module').then( (m) => m.CarritoModule)
+        children: carritoRoutes
       },
       {
         path: '**', /* personalizar pagina para error 404 */
@@ -54,10 +52,4 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   }
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+]

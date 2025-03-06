@@ -5,7 +5,7 @@ import { environment } from 'environments/environment';
 import { of } from 'rxjs';
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: 'any'
 })
 
 export class ApiClass {

@@ -1,4 +1,9 @@
-.carousel-inner img {
+.carousel-inner {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1440 / 352;
+}
+
+.carousel-img {
+    width: 100%;
+    height: auto;
 }

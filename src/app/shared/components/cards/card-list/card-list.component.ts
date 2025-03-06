@@ -3,12 +3,14 @@ import { Component, inject} from '@angular/core';
 import { ICard } from '../../../interfaces/icard.metadata';
 import { CartService } from '@data/services/api/cartService/cart.service';
 import { CardService } from '@data/services/api/cardService/card.service';
+import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-card-list',
   templateUrl: './card-list.component.html',
   styleUrls: ['./card-list.component.css'],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule]
 })
 
 export class CardListComponent{

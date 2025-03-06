@@ -1,21 +1,14 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { CartComponent } from '@modules/cart/cart.component';
-import { FormCartComponent } from '@modules/form-cart/form-cart.component';
+import { Routes } from '@angular/router';
 
-const routes:Routes = [
+export const carritoRoutes:Routes = [
   {
     path: '',
-    component: CartComponent
+    loadComponent: () =>
+      import('@modules/cart/cart.component').then( (m) => m.CartComponent)
   },
   {
     path: 'formulario',
-    component: FormCartComponent
+    loadComponent: () =>
+      import('@modules/form-cart/form-cart.component').then( (m) => m.FormCartComponent)
   }
-]
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class CarritoRoutingModule { }
+];

@@ -1,10 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { CarrouselComponent } from '../../shared/components/carrousel/carrousel.component';
+import { CardListComponent } from '../../shared/components/cards/card-list/card-list.component';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: true,
+    imports: [CarrouselComponent, CardListComponent]
 })
 export class HomeComponent implements OnInit {
   

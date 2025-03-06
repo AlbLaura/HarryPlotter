@@ -1,16 +1,8 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { NewsComponent } from '@modules/news/news.component';
+import { Routes } from '@angular/router';
 
-const routes:Routes = [
+export const anunciosRoutes:Routes = [
   {
     path: '',
-    component: NewsComponent
+    loadComponent: () => import('@modules/news/news.component').then( (m) => m.NewsComponent)
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-export class NewsRoutingModule { }

@@ -1,26 +1,17 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
-import { ProductDetailComponent } from '../product-detail/product-detail.component';
-import { NewsDetailComponent } from '@modules/news-detail/news-detail.component';
+import { Routes } from '@angular/router';
 
-const routes: Routes = [
+export const homeRoutes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        loadComponent: () => import('@modules/home/home.component').then(m => m.HomeComponent)
     },
     {
         path: 'producto-detalle/:id',
-        component: ProductDetailComponent
+        loadComponent: () => import('@modules/product-detail/product-detail.component').then(m => m.ProductDetailComponent) 
     },
     {
         path: 'anuncios-detalle/:id',
-        component: NewsDetailComponent
+        loadComponent: () => import('@modules/news-detail/news-detail.component').then(m => m.NewsDetailComponent) 
     }
 ];
 
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
-})
-export class HomeRoutingModule { }

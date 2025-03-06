@@ -1,17 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { CategoriesComponent } from '../categories/categories.component';
+import { Routes } from '@angular/router';
 
-const routes:Routes = [
+export const categoriasRoutes:Routes = [
   {
     path: '',
-    component: CategoriesComponent
+    loadComponent: () =>
+      import('@modules/categories/categories.component').then( (m) => m.CategoriesComponent)
   }
 ];
-
-@NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
-})
-
-export class CategoriesRoutingModule { }

@@ -1,21 +1,26 @@
-import { ViewportScroller } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CommonModule, ViewportScroller } from '@angular/common';
+import { Component, Injectable} from '@angular/core';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Contact, FormContactService } from '@data/services/api/contactService/form-contact.service';
 @Component({
     selector: 'app-form-contact',
     templateUrl: './form-contact.component.html',
     styleUrls: ['./form-contact.component.css'],
-    standalone: true
+    standalone: true,
+    imports: [ReactiveFormsModule, CommonModule]
 })
-export class FormContactComponent implements OnInit{
+@Injectable({
+  providedIn: 'root'
+})
+export class FormContactComponent{
 
   constructor (
     private viewportScroller: ViewportScroller, 
     private formservice: FormContactService, 
-    private fb: FormBuilder,
-    public applyForm: FormGroup) 
+    private fb: FormBuilder) 
   {}
+
+  applyForm!:FormGroup;
 
   ngOnInit() {
     this.viewportScroller.scrollToPosition([0,0]);
@@ -48,9 +53,6 @@ export class FormContactComponent implements OnInit{
           alert('Hubo un error al enviar el formulario. Por favor, intente de nuevo.')
         }
       });
-      // Se elimina la subscripcion para que no se siga guardando en segundo plano (memory leak)
-      NOTIFICACION_USER.unsubscribe;
     };
   };
-
 }
