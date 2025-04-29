@@ -19,7 +19,7 @@
         <!-- Evento (click) que redirige al detalle del producto y reseta su busqueda -->
         <a 
             class="dropdown-item" 
-            routerLink="/home/producto-detalle/{{producto.id}}" 
+            [routerLink]="'/home/producto-detalle/' + producto.id" 
             routerLinkActive="active" 
             ariaCurrentWhenActive="page" 
             *ngFor="let producto of ICardProductos | filterBusqueda:filterProducto | slice:0:5"
@@ -28,7 +28,7 @@
         <!-- Informacion del producto: imagen y titulo | dependiendo de si hay stock aparece un texto informativo-->
             <div class="item-producto row">
                 <div class="col-4">
-                    <img src="{{producto.img}}" alt="">
+                    <img [src]="producto.img" alt="">
                 </div>
                 <div class="col-8" >
                     <h6>{{producto.title}}</h6>

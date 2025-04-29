@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { FormContactComponent } from '@modules/form-contact/form-contact.component';
 
 @Component({
@@ -7,7 +8,7 @@ import { FormContactComponent } from '@modules/form-contact/form-contact.compone
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.css'],
     standalone: true,
-    imports: [FormContactComponent, ReactiveFormsModule]
+    imports: [FormContactComponent, ReactiveFormsModule, RouterModule]
 })
 export class FooterComponent {
   // Año actual

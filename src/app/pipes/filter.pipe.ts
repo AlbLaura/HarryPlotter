@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { ICard } from '@components/interfaces/icard.metadata';
 
 @Pipe({
-  name: 'filterBusqueda'
+  name: 'filterBusqueda',
+  standalone: true
 })
 export class FilterPipe implements PipeTransform {
 

@@ -1,6 +1,12 @@
 <!-- Formato de vista = cuadricula -->
+<div *ngIf="ICardProductos?.length === 0">No hay productos disponibles...</div>
+
 <div class="card-cuadricula">
-    <app-card [data]="producto" *ngFor="let producto of ICardProductos;" class="col-8 col-md-6 col-xl-3" (addToCart)="addToCart($event)" ></app-card>
+    <app-card 
+        [data]="producto" 
+        *ngFor="let producto of ICardProductos" 
+        class="col-8 col-md-6 col-xl-3"
+    ></app-card>
 </div>
 <!-- Formato de vista = lista -->
 <!--
