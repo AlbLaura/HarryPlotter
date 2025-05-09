@@ -1,7 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { BreadcrumbComponent } from '@components/components/breadcrumb/breadcrumb.component';
-import { CardListComponent } from '@components/components/cards/card-list/card-list.component';
+import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { CardListComponent } from '@shared/components/cards/card-list/card-list.component';
 
 @Component({
     selector: 'app-categories',

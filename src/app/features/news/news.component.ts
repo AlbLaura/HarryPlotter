@@ -1,7 +1,7 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { BreadcrumbComponent } from '@components/components/breadcrumb/breadcrumb.component';
-import { CardNewsComponent } from '@components/components/cards/card-news/card-news.component';
+import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { CardNewsComponent } from '@shared/components/cards/card-news/card-news.component';
 
 @Component({
     selector: 'app-news',

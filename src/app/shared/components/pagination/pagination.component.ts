@@ -1,5 +1,6 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatPaginatorModule } from "@angular/material/paginator"
+/*import { MatPaginatorModule } from "@angular/material/paginator" */
 
 /**
  * @title Paginator 
@@ -8,15 +9,11 @@ import { MatPaginatorModule } from "@angular/material/paginator"
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
   styleUrls: ['./pagination.component.css'],
-  standalone: true
+  standalone: true,
+    imports: [CommonModule]
 })
 export class PaginationComponent {
-// Hace falta implementar un service con el listado de productos total
 
-  /* public page: Number = 1;
-  public totalPages: Number = 10;
-  private numResults: number = 10;
+//? Hace falta implementar un service con el listado de productos total
 
-  constructor() {
-  } */
 }

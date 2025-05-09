@@ -9,7 +9,7 @@ import { NavigationComponent } from '@layout/navigation/navigation.component';
     templateUrl: './skeleton.component.html',
     styleUrls: ['./skeleton.component.css'],
     standalone: true,
-    imports: [HeaderComponent, NavigationComponent, RouterOutlet, FooterComponent]
+    imports: [RouterOutlet, HeaderComponent, NavigationComponent, FooterComponent]
 })
 export class SkeletonComponent {
 

@@ -1,7 +1,7 @@
 // Servicio para traer un listado de todos los productos/noticias o por ID
 import { Injectable } from '@angular/core';
-import { ICard, News } from '@components/interfaces/icard.metadata';
 import { ApiClass } from '@data/schema/ApiClass.class';
+import { ICard, News } from '@shared/interfaces/icard.metadata';
 import { catchError, map, Observable, of } from 'rxjs';
 
 @Injectable({

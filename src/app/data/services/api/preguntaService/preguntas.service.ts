@@ -1,7 +1,7 @@
 // ? Servicio para las preguntas frecuentes de la sección Contacto
 import { Injectable } from '@angular/core';
 import { ApiClass } from '@data/schema/ApiClass.class';
-import { IQuestion } from '@components/interfaces/iquestion.metadata';
+import { IQuestion } from '@shared/interfaces/iquestion.metadata';
 import { Observable, catchError, map, of } from 'rxjs';
 
 @Injectable({

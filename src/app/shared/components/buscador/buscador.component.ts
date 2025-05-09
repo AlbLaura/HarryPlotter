@@ -1,17 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICard } from '../../interfaces/icard.metadata';
 import { CardService } from '@data/services/api/cardService/card.service';
-import { FormsModule } from '@angular/forms';
-import { CommonModule} from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { FilterPipe } from 'app/pipes/filter.pipe';
+import { ICard } from '@shared/interfaces/icard.metadata';
+import { FilterPipe } from '@shared/pipes/filter.pipe';
+import { sharedImports } from '@shared/shared';
 
 @Component({
   selector: 'app-buscador',
   templateUrl: './buscador.component.html',
   styleUrls: ['./buscador.component.css'],
   standalone: true,
-  imports: [FormsModule, CommonModule, RouterModule, FilterPipe]
+  imports: [...sharedImports, FilterPipe]
 })
 export class BuscadorComponent implements OnInit{
   public ICardProductos: ICard[] | null = null;

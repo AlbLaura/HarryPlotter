@@ -1,13 +1,14 @@
-import { CommonModule, ViewportScroller } from '@angular/common';
+import { ViewportScroller } from '@angular/common';
 import { Component, Injectable} from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Contact, FormContactService } from '@data/services/api/contactService/form-contact.service';
+import { sharedImports } from '@shared/shared';
 @Component({
     selector: 'app-form-contact',
     templateUrl: './form-contact.component.html',
     styleUrls: ['./form-contact.component.css'],
     standalone: true,
-    imports: [ReactiveFormsModule, CommonModule]
+    imports: [...sharedImports]
 })
 @Injectable({
   providedIn: 'root'

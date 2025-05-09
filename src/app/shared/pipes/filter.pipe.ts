@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { ICard } from '@components/interfaces/icard.metadata';
+import { ICard } from '@shared/interfaces/icard.metadata';
 
 @Pipe({
   name: 'filterBusqueda',

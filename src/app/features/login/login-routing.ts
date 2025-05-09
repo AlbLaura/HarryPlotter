@@ -4,6 +4,6 @@ export const loginRoutes:Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('@modules/login/login.component').then( (m) => m.LoginComponent)
+      import('./login.component').then( (m) => m.LoginComponent)
   }
 ];

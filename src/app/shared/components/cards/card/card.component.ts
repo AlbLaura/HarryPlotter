@@ -1,14 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ICard } from '../../../interfaces/icard.metadata';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { ICard } from '@shared/interfaces/icard.metadata';
+import { sharedImports } from '@shared/shared';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
   standalone: true,
-  imports: [CommonModule, RouterModule]
+  imports: [...sharedImports]
 })
 export class CardComponent implements OnInit{
 

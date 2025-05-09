@@ -2,15 +2,16 @@ import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CardService } from '@data/services/api/cardService/card.service';
-import { News } from '@components/interfaces/icard.metadata';
-import { BreadcrumbComponent } from '@components/components/breadcrumb/breadcrumb.component';
+import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { News } from '@shared/interfaces/icard.metadata';
+import { sharedImports } from '@shared/shared';
 
 @Component({
     selector: 'app-news-detail',
     templateUrl: './news-detail.component.html',
     styleUrls: ['./news-detail.component.css'],
     standalone: true,
-    imports: [BreadcrumbComponent]
+    imports: [...sharedImports, BreadcrumbComponent]
 })
 export class NewsDetailComponent implements OnInit{
 

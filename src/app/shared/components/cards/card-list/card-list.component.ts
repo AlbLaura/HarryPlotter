@@ -1,16 +1,17 @@
 //? listado de productos visualizados con el componente card
 import { Component, inject, OnInit} from '@angular/core';
-import { ICard } from '../../../interfaces/icard.metadata';
 import { CartService } from '@data/services/api/cartService/cart.service';
 import { CardService } from '@data/services/api/cardService/card.service';
-import { CommonModule, NgFor } from '@angular/common';
+import { sharedImports } from '@shared/shared';
+import { CardComponent } from '../card/card.component';
+import { ICard } from '@shared/interfaces/icard.metadata';
 
 @Component({
   selector: 'app-card-list',
   templateUrl: './card-list.component.html',
   styleUrls: ['./card-list.component.css'],
   standalone: true,
-  imports: [CommonModule]
+  imports: [...sharedImports, CardComponent]
 })
 
 export class CardListComponent implements OnInit{
@@ -32,7 +33,7 @@ export class CardListComponent implements OnInit{
 
   ngOnInit() {
     this.CardService.getAllProductos().subscribe( r => {
-      console.log("respuesta de getAllProductos()")
+      console.log('Respuesta cardservice:', r)
       if(!r.error) {
         this.ICardProductos = r.data;
       } else {

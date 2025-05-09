@@ -1,13 +1,13 @@
 import { Component, Input } from '@angular/core';
-import { IButton } from '../../interfaces/ibutton.metadata';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { IButton } from '@shared/interfaces/ibutton.metadata';
+import { sharedImports } from '@shared/shared';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css'],
   standalone: true,
-  imports: [RouterLink, RouterLinkActive]
+  imports: [...sharedImports]
 })
 export class ButtonComponent {
   @Input() routerLink!: IButton;

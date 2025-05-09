@@ -1,5 +1,4 @@
 // ? Servicio para el formulario de contacto que esta ubicado en el footer
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ApiClass } from '@data/schema/ApiClass.class';
 import { Observable } from 'rxjs';

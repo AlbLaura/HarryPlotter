@@ -1,13 +1,13 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { sharedImports } from '@shared/shared';
 
 @Component({
     selector: 'app-form-cart',
     templateUrl: './form-cart.component.html',
     styleUrls: ['./form-cart.component.css'],
     standalone: true,
-    imports: [ReactiveFormsModule]
+    imports: [...sharedImports]
 })
 export class FormCartComponent implements OnInit{
   constructor (private viewportScroller: ViewportScroller) {}

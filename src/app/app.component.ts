@@ -1,13 +1,13 @@
-import { ViewportScroller, NgIf } from '@angular/common';
+import { ViewportScroller, NgIf, CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
     standalone: true,
-    imports: [RouterOutlet, NgIf, RouterModule]
+    imports: [RouterOutlet, CommonModule]
 })
 export class AppComponent{
   title = 'HarryPlotter';

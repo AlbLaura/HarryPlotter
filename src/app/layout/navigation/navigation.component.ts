@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { sharedImports } from '@shared/shared';
 
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
     styleUrls: ['./navigation.component.css'],
     standalone: true,
-    imports: [RouterModule]
+    imports: [...sharedImports]
 })
 export class NavigationComponent {
 

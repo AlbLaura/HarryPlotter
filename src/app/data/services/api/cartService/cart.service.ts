@@ -1,11 +1,9 @@
 // ? Servicio para el carrito de compras, manejo de estado y local storage
 import { inject, Injectable } from '@angular/core';
-import { ICard, ProductCart } from '@components/interfaces/icard.metadata';
-import { ApiClass } from '@data/schema/ApiClass.class';
-import { Observable, catchError, map } from 'rxjs';
+import { map } from 'rxjs';
 import { signalSlice } from 'ngxtension/signal-slice';
-import { StorageClass } from '@data/schema/storage.class';
-import { state } from '@angular/animations';
+import { StorageClass } from '@data/services/api/storage.class';
+import { ProductCart } from '@shared/interfaces/icard.metadata';
 
 interface State {
   products: ProductCart[];

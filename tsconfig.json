@@ -20,12 +20,12 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@components/*": ["app/shared/*"],
-      "@core/*": ["app/core/*"],
+      "@assets/*": ["assets/*"],
+      "@env/*": ["environment/*"],
+      "@app/*": ["src/app/*"],
       "@data/*": ["app/data/*"],
-      "@env/": ["environment/*"],
+      "@features/*": ["app/features/*"],
       "@layout/*": ["app/layout/*"],
-      "@modules/*": ["app/modules/*"],
       "@shared/*": ["app/shared/*"]
     },
     "skipLibCheck": true

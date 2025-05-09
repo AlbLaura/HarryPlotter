@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd} from '@angular/router';
 import { filter } from 'rxjs/operators';
@@ -6,7 +7,8 @@ import { filter } from 'rxjs/operators';
   selector: 'app-breadcrumb',
   templateUrl: './breadcrumb.component.html',
   styleUrl: './breadcrumb.component.css',
-  standalone: true
+  standalone: true,
+  imports: [CommonModule]
 })
 export class BreadcrumbComponent implements OnInit{
   breadcrumbs: string[] = [];

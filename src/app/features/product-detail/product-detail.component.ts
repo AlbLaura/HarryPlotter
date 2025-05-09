@@ -3,15 +3,16 @@ import { Component, input, OnInit, output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CardService } from '@data/services/api/cardService/card.service';
 import { CartService } from '@data/services/api/cartService/cart.service';
-import { ICard } from '@components/interfaces/icard.metadata';
-import { BreadcrumbComponent } from '@components/components/breadcrumb/breadcrumb.component';
+import { BreadcrumbComponent } from '@shared/components/breadcrumb/breadcrumb.component';
+import { ICard } from '@shared/interfaces/icard.metadata';
+import { sharedImports } from '@shared/shared';
 
 @Component({
     selector: 'app-product-detail',
     templateUrl: './product-detail.component.html',
     styleUrls: ['./product-detail.component.css'],
     standalone: true,
-    imports: [BreadcrumbComponent]
+    imports: [BreadcrumbComponent, ...sharedImports]
 })
 export class ProductDetailComponent implements OnInit{
   

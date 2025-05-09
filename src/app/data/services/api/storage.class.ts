@@ -1,6 +1,6 @@
 // ? Maneja el Local Storage del navegador
 import { Injectable } from "@angular/core";
-import { ProductCart } from "@components/interfaces/icard.metadata";
+import { ProductCart } from "@shared/interfaces/icard.metadata";
 import { Observable, of } from "rxjs";
 
 @Injectable({

@@ -1,7 +1,7 @@
 // ? Es una clase generica para extender desde los servicios, nos ayuda a ejecutar nuestros metodos. Es el servicio general de la aplicación
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'environments/environment';
+import { environment } from 'environments/environment.development';
 import { of } from 'rxjs';
 
 @Injectable({

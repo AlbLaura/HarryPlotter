@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { carritoRoutes } from '@modules/routing/carrito-routing.module';
-import { categoriasRoutes } from '@modules/routing/categories-routing.module';
-import { contactoRoutes } from '@modules/routing/contact-routing.module';
-import { homeRoutes } from '@modules/routing/home-routing.module';
-import { loginRoutes } from '@modules/routing/login-routing.module';
-import { anunciosRoutes } from '@modules/routing/news-routing.module';
+import { carritoRoutes } from '@features/cart/carrito-routing';
+import { categoriasRoutes } from '@features/categories/categories-routing';
+import { contactoRoutes } from '@features/contact/contact-routing';
+import { homeRoutes } from '@features/home/home-routing';
+import { loginRoutes } from '@features/login/login-routing';
+import { anunciosRoutes } from '@features/news/news-routing';
 
 export const appRoutes: Routes = [
   {
