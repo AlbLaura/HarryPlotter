@@ -1,10 +1,7 @@
 <div *ngIf="ICardProductos?.length === 0">No hay productos disponibles...</div>
 
 <div class="card-cuadricula">
-    <ng-container *ngFor="let producto of ICardProductos">
-        <app-card 
-        [data]="producto"
-        class="col-8 col-md-6 col-xl-3"
-    ></app-card>
-    </ng-container>
+    <ng-content *ngFor="let producto of ICardProductos">
+        <app-card [data]="producto" class="col-2"></app-card>
+    </ng-content>
 </div>

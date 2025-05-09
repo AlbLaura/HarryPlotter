@@ -1,9 +1,8 @@
 <!-- Visualizacion del producto en formato cuadricula -->
-<!-- <div class="card mb-2" *ngIf="data"> -->
+<div class="card mb-2" *ngIf="data">
     <img class="card-img-top" src="{{data.image}}" alt="Imagen del producto">
     <div class="card-body d-flex flex-column justify-content-around">
         <div class="card-info mb-2">
-            <p>hoal buenas</p>
             <h6 class="card-title">{{data.title}}</h6>
             <!-- <app-badge-tazas [category]="data.category" class="d-flex justify-content-around" *ngIf="data.category"></app-badge-tazas> -->
             <p class="card-text text-justify mt-2">{{data.description}}</p>
@@ -13,4 +12,4 @@
             <app-button colorButton="danger" routerLink="/home/{{datadb}}/{{data.id}}" routerLinkActive="active" ariaActive="page" textButton="Ver Info"></app-button>
         </div>
     </div>
-<!-- </div> -->
+</div>

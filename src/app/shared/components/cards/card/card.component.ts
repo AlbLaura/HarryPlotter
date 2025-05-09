@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ButtonComponent } from '@shared/components/button/button.component';
 import { ICard } from '@shared/interfaces/icard.metadata';
 import { sharedImports } from '@shared/shared';
 
@@ -7,7 +8,7 @@ import { sharedImports } from '@shared/shared';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
   standalone: true,
-  imports: [...sharedImports]
+  imports: [...sharedImports, ButtonComponent]
 })
 export class CardComponent implements OnInit{
 

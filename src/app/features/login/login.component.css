@@ -1,3 +1,6 @@
+.container {
+    margin-top: 80px;
+}
 .form-control {
     width: 100%;
     box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.398);
@@ -7,12 +10,6 @@
 .form-group label {
     font-size: 1.3rem;
     margin-bottom: 0;
-}
-.container {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .card {
     height: 80%;
@@ -42,20 +39,27 @@
     padding: .5rem 2rem;
     font-size: 1.2rem;
 }
-.card-header, .card-header--active{
-    display:inline-block;
-    background-color: var(--colorPrincipal);
-    color: var(--colorBG);
+.card-header {
+    padding: 0;
+}
+.card-header, .button-header{
+    background-color: var(--colorBG);
+    color: var(--colorPrincipal);
     font-weight: 400;
     font-size: 1.2rem;
     text-align: center;
+    border: none;
+    cursor: default;
 }
-.card-header:hover {
+.button-header {
+    border: none;
+    padding:2%;
+}
+.--active {
+    background-color: var(--colorPrincipal);
+    color: var(--colorBG);
+}
+.--active:hover {
     background-color: var(--color-hover);
     cursor: pointer;
-}
-.card-header--active {
-    background-color: var(--colorBG);
-    border-bottom: none;
-    color: var(--colorPrincipal);
 }
